@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Companions</name>
+		<description>Companion creatures from JJK.</description>
+		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
+		<update version="5.0">
+      <file name="companions.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/companions.xml"/>
+    </update>
+  </info>
+  <element name="Shikigami Companion" type="Companion" source="JJK" id="ID_JJK_COMPANION_SHIKIGAMI_COMPANION"> 
+    <supports>Shikigami Companion</supports>
+		<description />
+		<setters>
+			<set name="strength">16</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">12</set>
+			<set name="charisma">8</set>
+			<set name="ac">12 + your proficiency</set>
+			<set name="hp">5 + 5 times your Shikigami User level</set>
+			<set name="speed">40 ft., fly 10 ft.</set>
+			<set name="languages">understands common</set>
+			<set name="type">Shikigami</set>
+			<set name="size">Small</set>
+			<set name="alignment">unaligned</set>
+			<set name="challenge">1</set>
+      <set name="saves">Dex +3, Wis +3</set>
+      <set name="conditionImmunities">charmed</set>
+      <set name="senses">passive Perception 11</set>
+      <set name="traits"></set>
+			<set name="actions">ID_WOTC_PHB_COMPANION_ACTION_APE_MULTIATTACK,ID_WOTC_PHB_COMPANION_ACTION_APE_FIST,ID_WOTC_PHB_COMPANION_ACTION_APE_ROCK</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="12" />
+      <stat name="companion:ac" value="proficiency" />
+			<stat name="companion:hp:max" value="5" bonus="base" />
+      <stat name="companion:hp:max" value="level:shikigami user"/>
+      <stat name="companion:hp:max" value="level:shikigami user"/>
+      <stat name="companion:hp:max" value="level:shikigami user"/>
+      <stat name="companion:hp:max" value="level:shikigami user"/>
+      <stat name="companion:hp:max" value="level:shikigami user"/>
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:fly" value="10" bonus="base" />
+      <stat name="companion:proficiency" value="proficiency" bonus="base"/>
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency"/>
+      <stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency"/>
+		</rules>
+	</element>
+  <element name="Innate Bond" type = "Companion Trait" sources="JJK" id="ID_JJK_COMPANION_TRAIT_SHIKIGAMI_COMPANION_INNATE_BOND">
+    <description>
+			<p>You can add your proficiency bonus to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. At 5th level your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</p>
+		</description>
+		<sheet>
+			<description level="1">You can add your proficiency bonus to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves.</description>
+      <description level="5">You can add your proficiency bonus to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. Your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</description>
+		</sheet>
+	<element name="Close Bond" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_SHIKIGAMI_COMAPANION_CLOSE_BOND">
+		<description>
+			<p>At 15th level, when your shikigami companion hits with an attack, you can spend cursed energy up to your CE modifier as a reaction to use Cursed Strike through your companion.</p>
+		</description>
+		<sheet>
+			<description level="15">When your shikigami companion hits with an attack, you can spend cursed energy up to your CE modifier as a reaction to use Cursed Strike through your companion.</description>
+		</sheet>
+	</element>
+	<element name="Strike" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_SHIKIGAMI_COMPANION_STRIKE">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) + your proficiency bludgeoning, piercing, or slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) + {{companion:proficiency}} bludgeoning, piercing, or slashing damage.</description>
+		</sheet>
+    <rules>
+      <stat name="companion:proficiency" value="proficiency" bonus="base"/>
+		</rules>
+	</element>
+</elements>
