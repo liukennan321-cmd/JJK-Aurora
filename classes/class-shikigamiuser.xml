@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.14">
+		<update version="5.15">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -134,7 +134,7 @@
 		</sheet>
 		<rules>
 			<stat name="ce:points" value="level:shikigami user" />
-			<select name="Cursed Energy Ability" type="Ability" number="1">
+			<select name="Cursed Energy Ability" type="Class Feature" number="1">
     			<option value="wisdom:modifier">Wisdom</option>
     			<option value="charisma:modifier">Charisma</option>
 			</select>
