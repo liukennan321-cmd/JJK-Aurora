@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>JJK</name>
+		<description>JJK Homebrew.</description>
+		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
+		<update version="5.0">
+			<file name="jjk.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook.index" />
+		</update>
+	</info>
+	<files>	
+		<!-- classes -->
+		<file name="class-shikigami-user.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/classes/class-barbarian.xml" />
+	</files>
+</index>
