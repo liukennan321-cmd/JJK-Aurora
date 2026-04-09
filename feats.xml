@@ -8,7 +8,27 @@
 			<file name="feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/feats.xml" />
 		</update>
 	</info>
-
+	<element name="Curse Enhanced Body" type="Feat" source="JJK" id="ID_JJK_FEAT_CURSE_ENHANCED_BODY">
+      <prerequisite>18+ Cursed Energy Score</prerequisite>
+      <description>
+        <p><em>Prerequisite: 18+ Cursed Energy Score</em></p>
+			  <p>You can enhance your body with Cursed energy. While not wearing armor, you add your Cursed Energy modifier to your AC. This becomes half your modifier (rounded up) if you have a feature such as Unarmored Defense.
+			Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend cursed energy up to your Cursed Energy modifier and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws.</p>
+		</description>
+		<sheet>
+			<description>While not wearing armor, your AC increases by {{f:ceb}}. This becomes {{f:cebh}} if you have a feature such as Unarmored Defense.
+			Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend up to {{f:ceb}} CE and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws</description>
+		</sheet>
+		<rules>
+			<stat name="f:cebh" value="charisma:modifier:half:up" bonus="base"/>
+			<stat name="f:cebh" value="wisdom:modifier:half:up" bonus="base"/>
+			<stat name="f:ceb" value="charisma:modifier" bonus="base"/>
+			<stat name="f:ceb" value="wisdom:modifier" bonus="base"/>
+			<stat name="ac:misc" value="f:cebh" equipped="[armor:none]" requirements="![unarmored defense:none]"/>
+			<stat name="ac:misc" value="f:ceb" equipped="[armor:none]" requirements="[unarmored defense:none]"/>
+		</rules>
+	</element>
+	
 	<element name="Immense Cursed Energy" type="Feat" source="JJK" id="ID_JJK_FEAT_IMMENSE_CURSED_ENERGY">
       <prerequisite>15+ Cursed Energy Score</prerequisite>
       <description>
@@ -23,7 +43,7 @@
 		</sheet>
 		<rules>
 			<stat name="cu:stat" value="1" />
-      <stat name="ce:points" value="1" />
+      		<stat name="ce:points" value="1" />
 		</rules>
 	</element>
 </elements>
