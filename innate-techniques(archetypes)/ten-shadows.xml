@@ -118,7 +118,7 @@
 			<description>
 				<p>Any hostile creatures that end their turn within your domain must make a Dexterity (Acrobatics) check or become restrained. They can make a Strength (Athletics) check at the beginning of their turn to escape. The area counts as difficult terrain for all creatures of your choice, and you are under the effects of Freedom of Movement while within the domain.</p>
 				<p class="indent">As a bonus action you can spend up to {{ce:detscsg}} to create a number of clones of yourself equal to the CE spent. The clones have all your features and stats, but not weapons or hit points and cannot use Cursed Energy. They have {{ce:detscsg}} hit points and become a shadow puddle once reduced to 0 hit points. You can use your reaction to switch places with a clone when you are hit, making the clone take the hit instead.</p>
-				<p class="indent">Whenever you summon a shikigami, you can instead spend cursed energy equal to the shikigami's cost(treat its price as if you were outside your domain) to summon a perfect copy of the shikigami. You can spend CE to make up to {{ce:detscsg}} shikigami copies on the same turn. You cannot create copies of Mahoraga with this feature.
+				<p class="indent">Whenever you summon a shikigami, you can instead spend cursed energy equal to the shikigami's cost(treat its price as if you were outside your domain) to summon a perfect copy of the shikigami. You can spend CE to make up to {{ce:detscsg}} shikigami copies on the same turn. You cannot create copies of Mahoraga with this feature.</p>
 				<p class="indent">Your normal Shikigami don't cost CE</p>
 			</description>
 		</sheet>
