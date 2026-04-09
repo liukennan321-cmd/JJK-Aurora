@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="5.0">
+			<file name="sources.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/source.xml" />
+		</update>
+	</info>
+	<element name="JJK" type="Source" source="JJK" id="ID_JJK_SOURCE">
+		<description>
+			<p><strong>Lets larp, just this once</strong></p>
+		</description>
+		<setters>
+			<set name="abbreviation">JJK</set>
+			<set name="url">https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0</set>
+			<set name="image">https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/Screenshot 2026-04-09 094918.png</set>
+			<set name="author" abbreviation="JJK" url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="supplement">false</set>
+      <set name="third-party">true</set>
+      <set name="homebrew">true</set>
+			<set name="release">2026</set>
+		</setters>
+	</element>
+</elements>
