@@ -92,7 +92,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_JJK_MULTICLASS_SHIKIGAMI_USER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_JJK_MULTICLASS_SHIKIGAMI_USER" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_JJK_MULTICLASS_SHIKIGAMI_USER" />
-			<select type="Proficiency" name="Skill Proficiency (Shikigami User)" supports="Skill,Shikigami User" number="2" requirements="!ID_JJK_MULTICLASS_SHIKIGAMI_USER" />
+			<select type="Proficiency" name="Skill Proficiency (Shikigami User)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_JJK_MULTICLASS_SHIKIGAMI_USER" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CURSED_ENERGY" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_INNATE_TECHNIQUE" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_COMPANION" level="1" />
