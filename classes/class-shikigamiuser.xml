@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.17">
+		<update version="5.18">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -127,6 +127,7 @@
 	<supports>CE Ability</supports>
 	<rules>
 		<stat name="ce:modifier" value="wisdom:modifier" />
+		<stat name="cu:stat" value="wisdom:score" />
 	</rules>
 	</element>
 
@@ -134,26 +135,28 @@
 	<supports>CE Ability</supports>
 	<rules>
 		<stat name="ce:modifier" value="charisma:modifier" />
+		<stat name="cu:stat" value="charisma:score" />
 	</rules>
 	</element>
 	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CURSED_ENERGY">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_CURSED_ENERGY</requirements>
 		<description>
-			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice).</p>
+			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
 		</description>
 		<sheet>
-			<description>You have {{ce:points}}+{{ce:modifier}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}+{{ce:modifier}}</description>
+			<description>You have {{ce:points}}+{{ce:modifier}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}+{{ce:modifier}}. Your curse stat is {{}}</description>
 		</sheet>
 		<rules>
-			<stat name="ce:points" value="level:shikigami user" />
+			<stat name="ce:points" value="level:shikigami user" bonus="cursed energy" />
 			<select name="Cursed Energy Ability" type="Class Feature" supports="CE Ability" number="1">
     			<option value="wisdom:modifier">Wisdom</option>
     			<option value="charisma:modifier">Charisma</option>
 			</select>
-			<stat name="ce:modifier" value="[Cursed Energy Ability]" />
-			<stat name="ce:dc" value="8" />
-			<stat name="ce:dc" value="proficiency" />
+			<stat name="ce:modifier" value="[Cursed Energy Ability]" bonus="cursed energy"/>
+			<stat name="ce:dc" value="8" bonus="cursed energy"/>
+			<stat name="ce:dc" value="proficiency" bonus="cursed energy"/>
+			<stat name="cu:stat" value="[Cursed Energy Ability]" bonus="cursed energy"/>
 		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_INNATE_TECHNIQUE">
