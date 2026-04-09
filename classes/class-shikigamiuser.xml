@@ -280,7 +280,7 @@
 			<description>Your shikigami gains a hover speed of 40ft. Its strike attacks deal 1d6 extra necrotic damage.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Shikigami Improvement" supports="Shikigami Imporvement Choice"/>
+			<select type="Class Feature" name="Shikigami Improvement" supports="Shikigami Improvement Choice"/>
 		</rules>
 	</element>
 	<element name="Size Increase" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SIZE_INCREASE">
