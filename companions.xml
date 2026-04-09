@@ -19,7 +19,7 @@
 			<set name="hp">5 + 5 times your Shikigami User level</set>
 			<set name="speed">40 ft., fly 10 ft.</set>
 			<set name="languages">understands common</set>
-			<set name="type">Shikigami</set>
+			<set name="type">Beast</set>
 			<set name="size">Small</set>
 			<set name="alignment">unaligned</set>
 			<set name="challenge">1</set>
