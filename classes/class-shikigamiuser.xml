@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.11">
+		<update version="5.12">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -108,7 +108,7 @@
 		</rules>
 		<multiclass id="ID_JJK_MULTICLASS_SHIKIGAMI_USER">
 			<prerequisite>Charisma 13</prerequisite>
-			<requirements>(([cha:13]),ID_INTERNAL_GRANTS_MULTICLASS_UNLOCKER</requirements>
+			<requirements>(([cha:13])</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Investigation, light armor, daggers, darts, slings, quarterstaffs, and handguns</set>
 			</setters>
