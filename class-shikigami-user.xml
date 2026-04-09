@@ -49,7 +49,7 @@
 				<tr><td>4th</td><td>d4</td><td>4 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>5th</td><td>d6</td><td>5 + CE modifier</td><td class="left">Coordinated Blow</td></tr>
 				<tr><td>6th</td><td>d6</td><td>6 + CE modifier</td><td class="left">Innate  Technique Feature</td></tr>
-				<tr><td>7th</td><td>d6</td><td>7 + CE modifier</td><td class="left">Improvement Shikigami</td></tr>
+				<tr><td>7th</td><td>d6</td><td>7 + CE modifier</td><td class="left">Shikigami Improvement</td></tr>
 				<tr><td>8th</td><td>d6</td><td>8 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
 				<tr><td>9th</td><td>d6</td><td>9 + CE modifier</td><td class="left"></td></tr>
 				<tr><td>10th</td><td>d6</td><td>10 + CE modifier</td><td class="left">United Front</td></tr>
@@ -71,7 +71,7 @@
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHARED_TECHNIQUE" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ABILITYSCOREIMPROVEMENT_SHIKIGAMI_USER" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_COORDINATED_BLOW" />
-			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_IMPROVEMENT_SHIKIGAMI" />
+			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_UNITED_FRONT" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CLOSE_BOND" />
@@ -101,7 +101,7 @@
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHARED_TECHNIQUE" level="2" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ABILITYSCOREIMPROVEMENT_SHIKIGAMI_USER" level="4" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_COORDINATED_BLOW" level="5" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_IMPROVEMENT_SHIKIGAMI" level="7" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT" level="7" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_UNITED_FRONT" level="10" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI" level="13" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CLOSE_BOND" level="15" />
@@ -160,12 +160,15 @@
 			<p class="indent">In combat, the shikigami shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but only takes the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its statblock or some other action. If you are incapacitated, the shikigami can take any action of its choice, not just Dodge.</p>		
 			<p class="indent">The shikigami remains until reduced to 0 hit points, you summon the shikigami again, or you die. Anything the shikigami was wearing or carrying is left behind when it vanishes.</p>		
 		</description>
-		<sheet>
-			<description>As an action, you can summon the shikigami that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you. You can summon your shikigami companion for free once per long rest or again as an action for 3 cursed energy.
-			The shikigami is friendly to you and your companions, and it obeys your commands. Use its game statistics in the accompanying Shikigami Companion stat blocks, which uses your proficiency bonus (PB) in several places. 
+		<sheet usage="Action, 1/Long Rest or 3 CE">
+			<description>You can summon a shikigami that is bound to you. It appears in an unoccupied space of your choice within 30 feet of you.
+			The shikigami is friendly to you and your companions, and it obeys your commands.
 			In combat, the shikigami shares your initiative and takes its turn immediately after yours. It can move and use its reaction on its own, but only takes the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its statblock or some other action. If you are incapacitated, the shikigami can take any action of its choice, not just Dodge.
 			The shikigami remains until reduced to 0 hit points, you summon the shikigami again, or you die. Anything the shikigami was wearing or carrying is left behind when it vanishes.</description>
 		</sheet>
+		<rules>
+			
+		</rules>
 	</element>
 	<element name="Martial Arts" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_MARTIAL_ARTS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_MARTIAL_ARTS</requirements>
@@ -217,164 +220,91 @@
 			<select type="Class Feature" name="Improvement Option (Shikigami User 19)" supports="Improvement Option,Shikigami User,19" level="19" />
 		</rules>
 	</element>
-	<element name="Slow Fall" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_SLOW_FALL">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_SLOW_FALL</requirements>
+	<element name="Coordinated Blow" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_COORDINATED_BLOW">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_COORDINATED_BLOW</requirements>
 		<description>
-			<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>
+			<p>Beginning at 5th level, you and your shikigami strike as one. As part of the attack action, you can command your shikigami to move and attack a creature within range or take a different action.</p>
 		</description>
-		<sheet usage="Reaction">
-			<description>Reduce any falling damage you take by {{monk:slowfall}}.</description>
+		<sheet>
+			<description>As part of the attack action, you can command your shikigami to move and attack a creature within range or take a different action.</description>
+		</sheet>
+	</element>
+	<element name="Shikigami Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT</requirements>
+		<description>
+			<p>Starting at 7th level, your shikigami grows stronger. Your shikigami gains the following benefits:</p>
+			<ul>
+				<li>It gains a hover speed equal to its walking speed.</li>
+				<li>Its strike attacks deal 1d6 extra necrotic damage.</li>
+				<li>You can either choose for your shikigami to become medium or gain the ability to become any weapon, dealing an additional 1d6 necrotic damage on a hit.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your shikigami gains a hover speed equal to its walking speed. Its strike attacks deal 1d6 extra necrotic damage. You can either choose for your shikigami to become medium or gain the ability to become any weapon, dealing an additional 1d6 necrotic damage on a hit.</description>
+		</sheet>
+	</element>
+	<element name="United Front" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_UNITED_FRONT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_UNITED_FRONT</requirements>
+		<description>
+			<p>At 10th level, your shikigami finds new ways to help you in combat. After an attack, you can choose for your shikigami to do one of the following if they are within 5ft of you or the enemy:</p>
+			<ul>
+				<li>The attack's target takes 1d8 necrotic damage from the shikigami.</li>
+				<li>The attack's target must succeed on a Strength saving throw against your CE save DC or be moved by the shikigami up to 15 feet horizontally in a direction of your choice and knocked prone.</li>
+				<li>You are moved by the shikigami 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>After an attack, if your shikigami is within 5 feet of you or the target of the attack, you can choose for your shikigami to do 1d8 more damage to the target, move the target one up to 15 feet horizontally in a direction of your choice and knock them prone unless they succeed on a Strength saving throw against your CE save DC, or move you 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Advanced Shikigami" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI</requirements>
+		<description>
+			<p>Beginning at 13th level, your shikigami grows stronger. Your shikigami gains the following benefits:</p>
+			<ul>
+				<li>You can spread out 4 points among its ability scores (max of 20).</li>
+				<li>Its strike attacks deal 1d6 extra necrotic damage(total of 2d6).</li>
+				<li>You can either choose for your shikigami to become large, or gain the ability to become any weapon, dealing an additional 2d6 necrotic damage.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your shikigami gains 4 ability points among its ability scores (max of 20). Its strike attacks deal 1d6 extra necrotic damage(total of 2d6). You can either choose for your shikigami to become large, or gain the ability to become any weapon, dealing an additional 2d6 necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name="Swift Escape" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SWIFT_ESCAPE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SWIFT_ESCAPE</requirements>
+		<description>
+			<p>At 17th level, your character is rescued at the last moment by your shikigami. When you take damage, you can use your reaction to give yourself resistance to that damage. You are moved by your shikigami and you are moved to an unoccupied space that you can see within your shikigami’s movement speed, where you reappear with the shikigami. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage = "Reaction, {{se:pr}}/Long Rest">
+			<description>You gain resistance to damage. You are moved by your shikigami up to your shikigami’s movement speed to an unoccupied space that you can see where you reappear with the shikigami.</description>
 		</sheet>
 		<rules>
-			<stat name="monk:slowfall" value="level:monk" />
-			<stat name="monk:slowfall" value="level:monk" />
-			<stat name="monk:slowfall" value="level:monk" />
-			<stat name="monk:slowfall" value="level:monk" />
-			<stat name="monk:slowfall" value="level:monk" />
+			<stat name="se:pr" value="proficiency" />
 		</rules>
 	</element>
-	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EXTRA_ATTACK_MONK">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EXTRA_ATTACK</requirements>
+	<element name="Perfected Bond" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_PERFECTED_BOND">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_PERFECTED_BOND</requirements>
 		<description>
-			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p>At 20th level, your shikigami no longer needs to be commanded, having perfect synchronicity. Your shikigami no longer takes any action to command, and you can share senses with it.</p>
 		</description>
 		<sheet>
-			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
-		</sheet>
-		<rules>
-			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
-		</rules>
-	</element>
-	<element name="Stunning Strike" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_STUNNING_STRIKE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_STUNNING_STRIKE</requirements>
-		<description>
-			<p>Starting at 5th level, you can interfere with the flow of ki in an opponent’s body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>
-		</description>
-		<sheet usage="Ki">
-			<description>When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</description>
-		</sheet>
-	</element>
-	<element name="Ki-Empowered Strikes" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_EMPOWERED_STRIKES">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_EMPOWERED_STRIKES</requirements>
-		<description>
-			<p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
-		</description>
-		<sheet>
-			<description>Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
-		</sheet>
-	</element>
-	<element name="Evasion" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EVASION_MONK">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EVASION</requirements>
-		<description>
-			<p>At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon’s lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
-		</description>
-		<sheet>
-			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
-		</sheet>
-	</element>
-	<element name="Stillness of Mind" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_STILLNESS_OF_MIND">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_STILLNESS_OF_MIND</requirements>
-		<description>
-			<p>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</p>
-		</description>
-		<sheet action="Action">
-			<description>You can end one effect on yourself that is causing you to be charmed or frightened.</description>
-		</sheet>
-	</element>
-	<element name="Purity of Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_PURITY_OF_BODY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_PURITY_OF_BODY</requirements>
-		<description>
-			<p>At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison.</p>
-		</description>
-		<sheet>
-			<description>Your mastery of the ki flowing through you makes you immune to disease and poison.</description>
-		</sheet>
-	</element>
-	<element name="Tongue of the Sun and Moon" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_TONGUE_OF_THE_SUN_AND_MOON</requirements>
-		<description>
-			<p>Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</p>
-		</description>
-		<sheet>
-			<description>You learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</description>
-		</sheet>
-	</element>
-	<element name="Diamond Soul" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_DIAMOND_SOUL">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_DIAMOND_SOUL</requirements>
-		<description>
-			<p>Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.</p>
-			<p class="indent">Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</p>
-		</description>
-		<sheet usage="Ki">
-			<description>Whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</description>
-		</sheet>
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
-		</rules>
-	</element>
-	<element name="Timeless Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_TIMELESS_BODY</requirements>
-		<description>
-			<p>At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically. You can still die of old age, however. In addition, you no longer need food or water.</p>
-		</description>
-		<sheet>
-			<description>Your ki sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically.
-			You no longer need food or water.</description>
-		</sheet>
-	</element>
-	<element name="Empty Body" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_EMPTY_BODY">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EMPTY_BODY</requirements>
-		<description>
-			<p>Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.</p>
-			<p class="indent">Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</p>
-			<div class="reference">
-				<div element="ID_PHB_SPELL_ASTRAL_PROJECTION" />
-			</div>
-		</description>
-		<sheet action="Action" usage="Ki">
-			<description>You can spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
-			You can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</description>
-		</sheet>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_ASTRAL_PROJECTION" />
-		</rules>
-	</element>
-	<element name="Perfect Self" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_PERFECT_SELF">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_MONK_PERFECT_SELF</requirements>
-		<description>
-			<p>At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.</p>
-		</description>
-		<sheet>
-			<description>When you roll for initiative and have no ki points remaining, you regain 4 ki points.</description>
+			<description>Your shikigami no longer takes any action to command, and you can share senses with it.</description>
 		</sheet>
 	</element>
 
 	<!--Feature Replacement Grants-->
-	<element name="Unarmored Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_UNARMORED_DEFENSE" />
-	<element name="Martial Arts Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MARTIAL_ARTS" />
-	<element name="Ki Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI" />
-	<element name="Flurry of Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_FLURRY_OF_BLOWS" />
-	<element name="Patient Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_PATIENT_DEFENSE" />
-	<element name="Step of the Wind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_STEP_OF_THE_WIND" />
-	<element name="Unarmored Movement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_UNARMORED_MOVEMENT" />
-	<element name="Monastic Tradition Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_MONASTIC_TRADITION" />
-	<element name="Deflect Missiles Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_DEFLECT_MISSILES" />
-	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_ABILITY_SCORE_IMPROVEMENT" />
-	<element name="Slow Fall Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_SLOW_FALL" />
-	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EXTRA_ATTACK" />
-	<element name="Stunning Strike Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_STUNNING_STRIKE" />
-	<element name="Ki-Empowered Strikes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_KI_EMPOWERED_STRIKES" />
-	<element name="Evasion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EVASION" />
-	<element name="Stillness of Mind Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_STILLNESS_OF_MIND" />
-	<element name="Purity of Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_PURITY_OF_BODY" />
-	<element name="Tongue of the Sun and Moon Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_TONGUE_OF_THE_SUN_AND_MOON" />
-	<element name="Diamond Soul Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_DIAMOND_SOUL" />
-	<element name="Timeless Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_TIMELESS_BODY" />
-	<element name="Empty Body Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_EMPTY_BODY" />
-	<element name="Perfect Self Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_MONK_PERFECT_SELF" />
+	<element name="Cursed Energy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_CURSED_ENERGY" />
+	<element name="Innate  Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_INNATE_TECHNIQUE" />
+	<element name="Shikigami Companion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHIKIGAMI_COMPANION" />
+	<element name="Martial Arts Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_MARTIAL_ARTS" />
+	<element name="Shared Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHARED_TECHNIQUE" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_ABILITYSCOREIMPROVEMENT_SHIKIGAMI_USER" />
+	<element name="Coordinated Blow Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_COORDINATED_BLOW" />
+	<element name="Shikigami Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SHIKIGAMI_IMPROVEMENT" />
+	<element name="United Front Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_UNITED_FRONT" />
+	<element name="Advanced Shikigami Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_ADVANCED_SHIKIGAMI" />
+	<element name=">Close Bond Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_CLOSE_BOND" />
+	<element name="Swift Escape Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_SWIFT_ESCAPE" />
+	<element name="Perfected Bond Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SHIKIGAMI_USER_PERFECTED_BOND" />
 </elements>
