@@ -16,53 +16,52 @@
 			<p>As a juggernaut, you gain the following class features.</p>
             <h5 class="caption">HIT POINTS</h5>
             <ul class="unstyled">
-                <li><strong>Hit Dice:</strong> 1d8 per juggernaut level</li>
-                <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
-                <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per juggernaut level after 1st</li>
+                <li><strong>Hit Dice:</strong> 1d12 per juggernaut level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per juggernaut level after 1st</li>
             </ul>
             <h5 class="caption">PROFICIENCIES</h5>
             <ul class="unstyled mb">
-                <li><strong>Armor:</strong> Light armor</li>
-                <li><strong>Weapons:</strong> Daggers, darts, slings, quarterstaffs, and handguns</li>
+                <li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+                <li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
                 <li><strong>Tools:</strong> None</li>
             </ul>
             <ul class="unstyled">
-                <li><strong>Saving Throws:</strong> Wisdom, Charisma</li>
-                <li><strong>Skills:</strong> Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion</li>
+                <li><strong>Saving Throws:</strong> Strength, Constitution</li>
+                <li><strong>Skills:</strong> Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival</li>
             </ul>
 			<h5 class="caption">EQUIPMENT</h5>
 			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
 			<ul>
-				<li>(a) a handgun or (b) a dagger.</li>
-				<li>(a) a component pouch or (b) an arcane focus</li>
-				<li>(a) a scholar's pack or (b) an explorer's pack</li>
-				<li>A technique manual</li>
+				<li>(a) a greataxe or (b) any martial melee weapon</li>
+				<li>(a) two handaxes or (b) any simple weapon</li>
+				<li>An explorer's pack and four javelins</li>
 			</ul>
-			<h5 class="caption">THE SHIKIGAMI USER</h5>
+			<h5 class="caption">THE JUGGERNAUT</h5>
 			<table class="class-features">
 				<thead>
 					<tr><td class="col-10">Level</td><td class="col-10">Dmg Dice</td><td class="col-10">Cursed Energy Points</td><td class="col-60 left">Features</td></tr>
 				</thead>
-				<tr><td>1st</td><td>d4</td><td>1 + CE modifier</td><td class="left">Cursed Energy, Innate Technique, Shikigami Companion, Martial Arts</td></tr>
-				<tr><td>2nd</td><td>d4</td><td>2 + CE modifier</td><td class="left">Shared Technique</td></tr>
-				<tr><td>3rd</td><td>d4</td><td>3 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
-				<tr><td>4th</td><td>d4</td><td>4 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>5th</td><td>d6</td><td>5 + CE modifier</td><td class="left">Coordinated Blow</td></tr>
-				<tr><td>6th</td><td>d6</td><td>6 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
-				<tr><td>7th</td><td>d6</td><td>7 + CE modifier</td><td class="left">Shikigami Improvement</td></tr>
-				<tr><td>8th</td><td>d6</td><td>8 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>9th</td><td>d6</td><td>9 + CE modifier</td><td class="left"></td></tr>
-				<tr><td>10th</td><td>d6</td><td>10 + CE modifier</td><td class="left">United Front</td></tr>
-				<tr><td>11th</td><td>d8</td><td>11 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
-				<tr><td>12th</td><td>d8</td><td>12 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>13th</td><td>d8</td><td>13 + CE modifier</td><td class="left">Advanced Shikigami</td></tr>
-				<tr><td>14th</td><td>d8</td><td>14 + CE modifier</td><td class="left"></td></tr>
-				<tr><td>15th</td><td>d8</td><td>15 + CE modifier</td><td class="left"></td></tr>
-				<tr><td>16th</td><td>d8</td><td>16 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>17th</td><td>d10</td><td>17 + CE modifier</td><td class="left">Swift Escape</td></tr>
-				<tr><td>18th</td><td>d10</td><td>18 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
-				<tr><td>19th</td><td>d10</td><td>19 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
-				<tr><td>20th</td><td>d10</td><td>20 + CE modifier</td><td class="left">Perfected Bond</td></tr>
+				<tr><td>1st</td><td>d6</td><td>1 + CE modifier</td><td class="left">Cursed Energy, Innate Technique, Unarmored Defense, Combat Prowess</td></tr>
+				<tr><td>2nd</td><td>d6</td><td>2 + CE modifier</td><td class="left">Focus, Reckless Blows</td></tr>
+				<tr><td>3rd</td><td>d6</td><td>3 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>4th</td><td>d6</td><td>4 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>5th</td><td>d8</td><td>5 + CE modifier</td><td class="left">Extra Attack, Pursuer</td></tr>
+				<tr><td>6th</td><td>d8</td><td>6 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>7th</td><td>d8</td><td>7 + CE modifier</td><td class="left">Shikigami Improvement</td></tr>
+				<tr><td>8th</td><td>d8</td><td>8 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>9th</td><td>d8</td><td>9 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>10th</td><td>d8</td><td>10 + CE modifier</td><td class="left">United Front</td></tr>
+				<tr><td>11th</td><td>d10</td><td>11 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>12th</td><td>d10</td><td>12 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>d10</td><td>13 + CE modifier</td><td class="left">Advanced Shikigami</td></tr>
+				<tr><td>14th</td><td>d10</td><td>14 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>15th</td><td>d10</td><td>15 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>16th</td><td>d10</td><td>16 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>d12</td><td>17 + CE modifier</td><td class="left">Swift Escape</td></tr>
+				<tr><td>18th</td><td>d12</td><td>18 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>19th</td><td>d12</td><td>19 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>d12</td><td>20 + CE modifier</td><td class="left">Perfected Bond</td></tr>
 			</table>	
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_CURSED_ENERGY" />
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_INNATE_TECHNIQUE" />
