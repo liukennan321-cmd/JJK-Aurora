@@ -52,7 +52,7 @@
 			<p>You can add your proficiency bonus to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. At 5th level your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</p>
 		</description>
 		<sheet>
-			<description level="1">You can add {{proficiency}} to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves.</description>
+			<description level="1">You can add {{companion:proficiency}} to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves.</description>
       		<description level="5">You can add {{proficiency}} to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. Your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</description>
 		</sheet>
 	</element>
