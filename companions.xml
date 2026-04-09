@@ -69,7 +69,7 @@
 		</sheet>
 		<rules>
 			<stat name="companion:sucbmodifier" value="charisma:modifier" bonus="cursed energy" />
-			<stat name="companion:sucbmodifier" value="wisdom:modifier" bonus="cursed energy" />4
+			<stat name="companion:sucbmodifier" value="wisdom:modifier" bonus="cursed energy" />
 		</rules>
 	</element>
 	<element name="Strike" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_SHIKIGAMI_COMPANION_STRIKE">
