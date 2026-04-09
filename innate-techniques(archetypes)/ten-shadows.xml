@@ -9,7 +9,7 @@
 	<element name="Ten Shadows" type="Archetype" source="JJK" id="ID_JJK_ARCHETYPE_TEN_SHADOWS">
 		<supports>Innate Technique</supports>
 		<description>
-			<p>You have great <strong>potential, said to rival the six eyes</strong></p>
+			<p>You have great <strong>potential</strong>, said to rival the six eyes</p>
 			<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_DIVINE_DOGS" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_TRIAL" />
 			<div element="ID_JJK_ARCHETYPE_FEATURE_TEN_SHADOWS_SHADOW_MANIPULATION" />
