@@ -4,14 +4,14 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.13">
+		<update version="5.14">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
 
 	<element name="Shikigami User" type="Class" source="JJK" id="ID_JJK_CLASS_SHIKIGAMI_USER">
 		<description>
-			<p>You use shikigami.</p>
+			<p>You use shikigami to fight.</p>
 			<h3>CLASS FEATURES</h3>
 			<p>As a shikigami user, you gain the following class features.</p>
             <h5 class="caption">HIT POINTS</h5>
