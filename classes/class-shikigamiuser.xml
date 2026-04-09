@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -280,7 +280,7 @@
 			<description>Your shikigami gains a hover speed of 40ft. Its strike attacks deal 1d6 extra necrotic damage.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Shikigami Improvement" supports="Shikigami Imporvement Choice">
+			<select type="Class Feature" name="Shikigami Improvement" supports="Shikigami Imporvement Choice"/>
 		</rules>
 	</element>
 	<element name="Size Increase" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SIZE_INCREASE">
@@ -327,6 +327,27 @@
 		</description>
 		<sheet>
 			<description>Your shikigami gains 4 ability points among its ability scores (max of 20). Its strike attacks deal 1d6 extra necrotic damage(total of 2d6). You can either choose for your shikigami to become large, or gain the ability to become any weapon, dealing an additional 2d6 necrotic damage.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Advanced Shikigami" supports="Advanced Shikigami Choice"/>
+		</rules>
+	</element>
+	<element name="Size Increase 2" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SIZE_INCREASE2">
+		<supports>Advanced Shikigami Choice</supports>
+		<description>
+			<p>Your shikigami increases by 1 size</p>
+		</description>
+		<sheet>
+			<description>Your shikigami increases by 1 size</description>
+		</sheet>
+	</element>
+	<element name="Damage Increase 2" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_DAMAGE_INCREASE2">
+		<supports>Advanced Shikigami Choice</supports>
+		<description>
+			<p>Your shikigami deals an additional 2d6 necrotic on a hit.</p>
+		</description>
+		<sheet>
+			<description>Your shikigami deals an additional 2d6 necrotic on a hit.</description>
 		</sheet>
 	</element>
 	<element name="Swift Escape" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_SWIFT_ESCAPE">
