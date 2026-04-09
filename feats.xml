@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from the Player’s Handbook.</description>
+		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
+		<update version="5.0">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Immense Cursed Energy" type="Feat" source="JJK" id="ID_JJK_FEAT_IMMENSE_CURSED_ENERGY">
+      <prerequisite>15+ Cursed Energy Score</prerequisite>
+      <description>
+        <p><em>Prerequisite: 15+ Cursed Energy Score</em></p>
+			  <p>Your Cursed Energy has massive reserves, making you become a cursed energy powerhouse. You gain the following benefits:</p>
+			  <ul>
+				<li>You gain a +1 to your Cursed Energy score (maximum of 20).</li>
+				<li>Your CE maximum increases by your Cursed Energy modifier.</li>
+			</ul>
+		</description>
+		<sheet display="false">
+		</sheet>
+		<rules>
+			<stat name="cu:stat" value="1" />
+      <stat name="ce:points" value="1" />
+		</rules>
+	</element>
+</elements>
