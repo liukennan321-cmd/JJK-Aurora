@@ -4,7 +4,7 @@
 		<name>Shikigami User</name>
 		<description>The Shikigami User class from JJK.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.18">
+		<update version="5.19">
 			<file name="class-shikigamiuser.xml" url="https://raw.githubusercontent.com/liukennan321-cmd/JJK-Aurora/refs/heads/main/classes/class-shikigamiuser.xml" />
 		</update>
 	</info>
@@ -148,15 +148,19 @@
 			<description>You have {{ce:points}}+{{ce:modifier}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}+{{ce:modifier}}. Your curse stat is {{}}</description>
 		</sheet>
 		<rules>
-			<stat name="ce:points" value="level:shikigami user" bonus="cursed energy" />
-			<select name="Cursed Energy Ability" type="Class Feature" supports="CE Ability" number="1">
+			<stat name="ce:points" value="level:shikigami user" />
+			<select name="Cursed Energy Ability(Mod)" type="Class Feature" supports="CE Ability" number="1">
     			<option value="wisdom:modifier">Wisdom</option>
     			<option value="charisma:modifier">Charisma</option>
 			</select>
-			<stat name="ce:modifier" value="[Cursed Energy Ability]" bonus="cursed energy"/>
-			<stat name="ce:dc" value="8" bonus="cursed energy"/>
-			<stat name="ce:dc" value="proficiency" bonus="cursed energy"/>
-			<stat name="cu:stat" value="[Cursed Energy Ability]" bonus="cursed energy"/>
+			<select name="Cursed Energy Ability(Stat)" type="Class Feature" supports="CE Ability" number="1">
+    			<option value="wisdom:score">Wisdom</option>
+    			<option value="charisma:score">Charisma</option>
+			</select>
+			<stat name="ce:modifier" value="[Cursed Energy Ability(Mod)]" />
+			<stat name="ce:dc" value="8" />
+			<stat name="ce:dc" value="proficiency" />
+			<stat name="cu:stat" value="[Cursed Energy Ability(Stat)]" />
 		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_INNATE_TECHNIQUE">
