@@ -275,35 +275,35 @@
 		<supports>Evasion Saving Throw</supports>
 		<description>
 		</description>
-		<sheet display="false" />
+		<sheet />
 	</element>
 	<element name="Constitution" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_CO">
 		<compendium display="false" />
 		<supports>Evasion Saving Throw</supports>
 		<description>
 		</description>
-		<sheet display="false" />
+		<sheet />
 	</element>
 	<element name="Intelligence" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_I">
 		<compendium display="false" />
 		<supports>Evasion Saving Throw</supports>
 		<description>
 		</description>
-		<sheet display="false" />
+		<sheet />
 	</element>
 	<element name="Wisdom" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_W">
 		<compendium display="false" />
 		<supports>Evasion Saving Throw</supports>
 		<description>
 		</description>
-		<sheet display="false" />
+		<sheet />
 	</element>
 	<element name="Charisma" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_CH">
 		<compendium display="false" />
 		<supports>Evasion Saving Throw</supports>
 		<description>
 		</description>
-		<sheet display="false" />
+		<sheet />
 	</element>
 	<element name="Tactical Retreat" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_TACTICAL_RETREAT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_TACTICAL_RETREAT</requirements>
@@ -312,8 +312,8 @@
 			<p class="indent">When you reach 15th level, you can move up to twice your speed.</p>
 		</description>
 		<sheet action="Reaction">
-			<description level="10">If an opponent moves within 5ft of you, you can move up to {speed} ft.</description>
-			<description level="15">If an opponent moves within 5ft of you, you can move up to {sc:tr:speed:calculation} ft.</description>
+			<description level="10">If an opponent moves within 5ft of you, you can move up to {{speed}} ft.</description>
+			<description level="15">If an opponent moves within 5ft of you, you can move up to {{sc:tr:speed:calculation}} ft.</description>
 		</sheet>
 		<rules>
 			<stat name="sc:tr:speed" value="speed" />
