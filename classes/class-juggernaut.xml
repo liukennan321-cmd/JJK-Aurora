@@ -79,10 +79,10 @@
 			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNSTOPPABLE" />
 		</description>
 		<sheet display="false">
-			<description>Cog mentality ah.</description>
+			<description>Cog mentality ahh</description>
 		</sheet>
 		<setters>
-			<set name="short">Cog mentality ah.</set>
+			<set name="short">Cog mentality ahh</set>
 			<set name="hd">d12</set>
 		</setters>
 		<rules>
