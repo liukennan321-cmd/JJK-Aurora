@@ -80,10 +80,10 @@
 			<div element="ID_JJK_CLASS_FEATURE_SCOUT_UNFATHOMABLE_SPEED" />
 		</description>
 		<sheet display="false">
-			<description>You walk suprisingly fast</description>
+			<description>You walk surprisingly fast</description>
 		</sheet>
 		<setters>
-			<set name="short">You walk suprisingly fast</set>
+			<set name="short">You walk surprisingly fast</set>
 			<set name="hd">d8</set>
 		</setters>
 		<rules>
@@ -198,6 +198,7 @@
 			<stat name="speed:unparalleledmovementscout" value="25" level="13" bonus="unparalleledmovement"/>
 			<stat name="speed:unparalleledmovementscout" value="30" level="17" bonus="unparalleledmovement"/>
 			<stat name="speed:unparalleledmovementscout" value="35" level="20" bonus="unparalleledmovement"/>
+			<stat name="speed" value="speed:unparalleledmovementscout"/>
 		</rules>
 	</element>
 	<element name="Swift Movements" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SWIFT_MOVEMENTS">
@@ -263,10 +264,10 @@
 		</description>
 		<sheet>
 			<description level="7">When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
-			<description level="15">When you are subjected to an effect that allows you to make a Dexterity or the chosen stat saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.<description>		
+			<description level="15">When you are subjected to an effect that allows you to make a Dexterity or the chosen stat saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>		
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Evasion Saving Throw" supports="Evasion Saving Throw" />
+			<select type="Class Feature" name="Evasion Saving Throw" supports="Evasion Saving Throw" level="15"/>
 		</rules>
 	</element>
 	<element name="Strength" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION_SAVING_THROW_S">
@@ -362,8 +363,8 @@
 	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EXTRA_ATTACK" />
 	<element name="Eagle Eyes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EAGLE_EYES" />
 	<element name="Evasion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EVASION" />
-	<element name="Brutal Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_TACTICAL_RETREAT" />
-	<element name="Tactical Retreat Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SIXTH_SENSE" />
-	<element name="Endless Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SWIFT_DODGE" />
+	<element name="Tactical Retreat Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_TACTICAL_RETREAT" />
+	<element name="Sixth Sense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SIXTH_SENSE" />
+	<element name="Swift Dodge Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SWIFT_DODGE" />
 	<element name="Unfathomable Speed Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_UNFATHOMABLE_SPEED" />
 </elements>
