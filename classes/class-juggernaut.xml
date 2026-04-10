@@ -308,7 +308,7 @@
 			<p>At 20th level, you are aware of your role in society and will do your best to fulfill it. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</p>
 		</description>
 		<sheet>
-			<description>Your Strength and Constitution increase by 4. Your maximum for those scores is now 24</description>
+			<description>Your Strength and Constitution increase by 4. Your maximum for those scores is now 24.</description>
 		</sheet>
 		<rules>
 			<stat name="strength:max" value="4" />
