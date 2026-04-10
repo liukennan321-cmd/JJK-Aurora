@@ -254,7 +254,7 @@
 			<description>As part of your bonus action while entering a focus, you can move up to {{j:p:speed:calculation}} ft. towards an enemy.</description>
 		</sheet>
 		<rules>
-			<stat name="j:p:speed" value="speed/2" />
+			<stat name="j:p:speed" value="speed" />
 			<stat name="j:p:speed:calculation" value="j:p:speed:half" />
 		</rules>
 	</element>
