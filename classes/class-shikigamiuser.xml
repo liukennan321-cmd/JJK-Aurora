@@ -419,8 +419,8 @@
 			<p>You can add your proficiency bonus to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. At 5th level your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</p>
 		</description>
 		<sheet>
-			<description level="1">You can add {{companion:proficiency}} to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves.</description>
-      		<description level="5">You can add {{proficiency}} to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. Your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</description>
+			<description level="1">You can add PB to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves.</description>
+      		<description level="5">You can add PB to any ability check or saving throw the shikigami makes. Your shikigami uses your proficiency bonus for attacks and saves. Your shikigami has advantage on melee attack rolls against a creature if you are within 5 feet of the creature and are not incapacitated.</description>
 		</sheet>
 	</element>
 	<element name="Close Bond" type="Companion Trait" source="JJK" id="ID_JJK_COMPANION_TRAIT_SHIKIGAMI_COMPANION_CLOSE_BOND">
@@ -428,7 +428,7 @@
 			<p>At 15th level, when your shikigami companion hits with an attack, you can spend cursed energy up to your CE modifier as a reaction to use Cursed Strike through your companion.</p>
 		</description>
 		<sheet action="Reaction">
-			<description level="15">When your shikigami companion hits with an attack, you can spend up to {{companion:sucbmodifier}} CE to use Cursed Strike through your companion.</description>
+			<description level="15">When your shikigami companion hits with an attack, you can spend CE up to your cursed energy modifier to use Cursed Strike through your companion.</description>
 		</sheet>
 	</element>
 	<element name="Strike" type="Companion Action" source="JJK" id="ID_JJK_COMPANION_ACTION_SHIKIGAMI_COMPANION_STRIKE">
@@ -436,7 +436,7 @@
 			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) + your proficiency bludgeoning, piercing, or slashing damage.</p>
 		</description>
 		<sheet>
-			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) + {{proficiency}} bludgeoning, piercing, or slashing damage.</description>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) + PB bludgeoning, piercing, or slashing damage.</description>
 		</sheet>
 	</element>
 
