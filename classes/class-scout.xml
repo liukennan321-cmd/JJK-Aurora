@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scout</name>
+		<description>The Scout class from JJK.</description>
+		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
+		<update version="5.0">
+			<file name="class-scout.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-scout.xml" />
+		</update>
+	</info>
+
+	<element name="Scout" type="Class" source="JJK" id="ID_JJK_CLASS_SCOUT">
+		<description>
+			<p>You run fast.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a juggernaut, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d12 per juggernaut level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 12 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d12 (or 7) + your Constitution modifier per juggernaut level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> Light armor, medium armor, shields</li>
+                <li><strong>Weapons:</strong> Simple weapons, martial weapons</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Strength, Constitution</li>
+                <li><strong>Skills:</strong> Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, and Survival</li>
+            </ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a greataxe or (b) any martial melee weapon</li>
+				<li>(a) two handaxes or (b) any simple weapon</li>
+				<li>An explorer's pack and four javelins</li>
+			</ul>
+			<h5 class="caption">THE JUGGERNAUT</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Dmg Dice</td><td class="col-10">Cursed Energy Points</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td>1st</td><td>d6</td><td>1 + CE modifier</td><td class="left">Cursed Energy, Innate Technique, Unarmored Defense, Combat Prowess</td></tr>
+				<tr><td>2nd</td><td>d6</td><td>2 + CE modifier</td><td class="left">Focus, Reckless Blows</td></tr>
+				<tr><td>3rd</td><td>d6</td><td>3 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>4th</td><td>d6</td><td>4 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>5th</td><td>d8</td><td>5 + CE modifier</td><td class="left">Extra Attack, Pursuer</td></tr>
+				<tr><td>6th</td><td>d8</td><td>6 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>7th</td><td>d8</td><td>7 + CE modifier</td><td class="left">Honed Instinct</td></tr>
+				<tr><td>8th</td><td>d8</td><td>8 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>9th</td><td>d8</td><td>9 + CE modifier</td><td class="left">Brutal Blows (1 Die)</td></tr>
+				<tr><td>10th</td><td>d8</td><td>10 + CE modifier</td><td class="left">Lock In</td></tr>
+				<tr><td>11th</td><td>d10</td><td>11 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>12th</td><td>d10</td><td>12 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>d10</td><td>13 + CE modifier</td><td class="left">Brutal Blows (2 Die)</td></tr>
+				<tr><td>14th</td><td>d10</td><td>14 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>15th</td><td>d10</td><td>15 + CE modifier</td><td class="left">Endless Focus</td></tr>
+				<tr><td>16th</td><td>d10</td><td>16 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>d12</td><td>17 + CE modifier</td><td class="left">Brutal Blows (3 Die)</td></tr>
+				<tr><td>18th</td><td>d12</td><td>18 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>19th</td><td>d12</td><td>19 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>d12</td><td>20 + CE modifier</td><td class="left">Unstoppable</td></tr>
+			</table>	
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_CURSED_ENERGY" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_INNATE_TECHNIQUE" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNARMORED_DEFENSE" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_COMBAT_PROWESS" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_FOCUS" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_RECKLESS_BLOWS" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ABILITYSCOREIMPROVEMENT_JUGGERNAUT" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_EXTRA_ATTACK" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_PURSUER" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_HONED_INSTINCT" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_BRUTAL_BLOWS" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_LOCK_IN" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ENDLESS_FOCUS" />
+			<div element="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNSTOPPABLE" />
+		</description>
+		<sheet display="false">
+			<description>Cog mentality ah.</description>
+		</sheet>
+		<setters>
+			<set name="short">Cog mentality ah.</set>
+			<set name="hd">d12</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_JJK_MULTICLASS_JUGGERNAUT"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_JJK_MULTICLASS_JUGGERNAUT"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_JJK_MULTICLASS_JUGGERNAUT"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_JJK_MULTICLASS_JUGGERNAUT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_JJK_MULTICLASS_JUGGERNAUT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_JJK_MULTICLASS_JUGGERNAUT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_JJK_MULTICLASS_JUGGERNAUT" />
+			<select type="Proficiency" name="Skill Proficiency (Juggernaut)" supports="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2" requirements="!ID_JJK_MULTICLASS_JUGGERNAUT" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_CURSED_ENERGY" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_INNATE_TECHNIQUE" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNARMORED_DEFENSE" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_COMBAT_PROWESS" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_FOCUS" level="2" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_RECKLESS_BLOWS" level="2" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ABILITYSCOREIMPROVEMENT_JUGGERNAUT" level="4" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_EXTRA_ATTACK" level="5" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_PURSUER" level="5" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_HONED_INSTINCT" level="7" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_BRUTAL_BLOWS" level="9" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_LOCK_IN" level="10" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ENDLESS_FOCUS" level="15" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNSTOPPABLE" level="20" />
+		</rules>
+		<multiclass id="ID_JJK_MULTICLASS_JUGGERNAUT">
+			<prerequisite>Constitution 13</prerequisite>
+			<requirements>([con:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Athletics, light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS"/>
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_CURSED_ENERGY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_CURSED_ENERGY</requirements>
+		<description>
+			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
+			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You have {{j:ce:points}} Cursed Energy and your Cursed Energy DC is {{j:ce:dc}}. Your curse stat is {{j:cu:stat}}</description>
+		</sheet>
+		<rules>
+			<stat name="j:ce:points" value="level:juggernaut" />
+			<stat name="j:ce:modifier" value="charisma:modifier" bonus="cursed energy" />
+			<stat name="j:ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
+			<stat name="j:ce:points" value="j:ce:modifier" />
+			<stat name="j:ce:dc" value="8" />
+			<stat name="j:ce:dc" value="proficiency" />
+			<stat name="j:ce:dc" value="j:ce:modifier" />
+			<stat name="j:cu:stat" value="charisma:score" bonus="cursed energy"/>			
+			<stat name="j:cu:stat" value="wisdom:score" bonus="cursed energy" />
+		</rules>
+	</element>
+	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_INNATE_TECHNIQUE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_INNATE_TECHNIQUE</requirements>
+		<description>
+			<p>Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th levels.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Innate Technique" supports="Innate Technique" />
+		</rules>
+	</element>
+	<element name="Unarmored Defense" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNARMORED_DEFENSE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNARMORED_DEFENSE</requirements>
+		<description>
+			<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Constitution modifier.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor and not wielding a shield, your AC equals {{ac:unarmored defense juggernaut}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense juggernaut:base" value="10" />
+			<stat name="ac:unarmored defense juggernaut:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense juggernaut:constitution" value="constitution:modifier" />
+			<stat name="ac:unarmored defense juggernaut" value="ac:unarmored defense juggernaut:base" />
+			<stat name="ac:unarmored defense juggernaut" value="ac:unarmored defense juggernaut:dexterity" />
+			<stat name="ac:unarmored defense juggernaut" value="ac:unarmored defense juggernaut:constitution" />
+			<stat name="ac:calculation" value="ac:unarmored defense juggernaut" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Unarmored Defense (Juggernaut)" />
+		</rules>
+	</element>
+	<element name="Combat Prowess" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_COMBAT_PROWESS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_COMBAT_PROWESS</requirements>
+		<description>
+			<p>At 1st level, your life of scrapping and battling with beasts, has given you mastery of Combat styles that use unarmed strikes and Juggernaut weapons, which are melee weapons without the two-handed property, and improvised weapons. You can not use the finesse property of a weapon while using it as a Juggernaut weapon.</p>
+			<ul>
+				<li>You can roll a d6 in place of the normal damage of your unarmed strike or Juggernaut weapon. This die changes as you gain Juggernaut levels, as shown in the scrapper column on the Juggernaut table.</li>
+				<li>When you use the Attack action with an unarmed strike or a Juggernaut weapon on your turn, you can make one unarmed strike or grapple as a bonus action. For example, if you take the Attack action and Attack with a Club, you can also make an Unarmed Strike or grapple as a Bonus Action, assuming you haven’t already taken a Bonus Action this turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Your unarmed strike or Juggernaut weapon can do 1d{{combat prowess:dice}} damage instead of its normal damage.
+			When you use the Attack action with an unarmed strike or a combat prowess weapon on your turn, you can make one unarmed strike or grapple as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="combat prowess:dice" value="6" bonus="combat prowess" />
+			<stat name="combat prowess:dice" value="8" bonus="combat prowess" level="5" />
+			<stat name="combat prowess:dice" value="10" bonus="combat prowess" level="11" />
+			<stat name="combat prowess:dice" value="12" bonus="combat prowess" level="17" />
+		</rules>
+	</element>
+	<element name="Focus" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_FOCUS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_FOCUS</requirements>
+		<description>
+			<p>At 2nd level, in battle, you fight with an unstoppable focus. On your turn, you can enter a focus as a bonus action. While focused, you gain the following benefits if you aren't wearing heavy armor:</p>
+			<ul>
+				<li>You have advantage on Strength checks and Strength saving throws.</li>
+				<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
+			</ul>
+			<p>Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action. Once you have focused a number of times equal to your proficiency modifier, you must finish a long rest before you can focus again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{Proficiency}}/Long Rest">
+			<description>If you aren't wearing heavy armor, you have advantage on Strength checks and Strength saving throws and you have resistance to bludgeoning, piercing, and slashing damage. Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Reckless Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_RECKLESS_BLOWS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_RECKLESS_BLOWS</requirements>
+		<description>
+			<p>Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</p>
+		</description>
+		<sheet>
+			<description>When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ABILITYSCOREIMPROVEMENT_JUGGERNAUT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_ABILITYSCOREIMPROVEMENT_JUGGERNAUT</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Juggernaut 4)" supports="Improvement Option,Juggernaut,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Juggernaut 8)" supports="Improvement Option,Juggernaut,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Juggernaut 12)" supports="Improvement Option,Juggernaut,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Juggernaut 16)" supports="Improvement Option,Juggernaut,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Juggernaut 19)" supports="Improvement Option,Juggernaut,19" level="19" />
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_EXTRA_ATTACK</requirements>
+		<description>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+		</description>
+		<sheet>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Pursuer" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_PURSUER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_PURSUER</requirements>
+		<description>
+			<p>Starting at 5th level, as part of your bonus action while entering a focus, you can move up to half your movement speed towards an enemy.</p>
+		</description>
+		<sheet>
+			<description>As part of your bonus action while entering a focus, you can move up to {{j:p:speed:calculation}} ft. towards an enemy.</description>
+		</sheet>
+		<rules>
+			<stat name="j:p:speed" value="speed/2" />
+			<stat name="j:p:speed:calculation" value="j:p:speed:half" />
+		</rules>
+	</element>
+	<element name="Honed Instinct" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_HONED_INSTINCT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_HONED_INSTINCT</requirements>
+		<description>
+			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
+			<p class="indent">Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your focus before doing anything else on that turn.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on initiative rolls. If you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn if you enter your focus before doing anything else on that turn.</description>
+		</sheet>
+	</element>
+	<element name="Brutal Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_BRUTAL_BLOWS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_BRUTAL_BLOWS</requirements>
+		<description>
+			<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</p>
+			<p class="indent">This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
+		</description>
+		<sheet>
+			<description>You can roll {{j:bb:die}} additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
+		</sheet>
+		<rules>
+			<stat name="j:bb:die" value="1" level="9" bonus="bb"/>
+			<stat name="j:bb:die" value="2" level="13" bonus="bb"/>
+			<stat name="j:bb:die" value="3" level="17" bonus="bb"/>
+		</rules>
+	</element>
+	<element name="Lock In" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_LOCK_IN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_LOCK_IN</requirements>
+		<description>
+			<p>Starting at 10th level, your focus can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're focusing and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</p>
+			<p class="indent">Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
+		</description>
+		<sheet>
+			<description>If you drop to 0 hit points while you're focusing and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</description>
+		</sheet>
+	</element>
+	<element name="Endless Focus" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ENDLESS_FOCUS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_ENDLESS_FOCUS</requirements>
+		<description>
+			<p>Beginning at 15th level, your focus is so fierce that it only ends if you fall unconscious or if you choose to end it.</p>
+		</description>
+		<sheet>
+			<description>Your focus only ends if you fall unconscious or if you choose to end it.</description>
+		</sheet>
+	</element>
+	<element name="Unstoppable" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNSTOPPABLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNSTOPPABLE</requirements>
+		<description>
+			<p>At 20th level, you are aware of your role in society and will do your best to fulfill it. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</p>
+		</description>
+		<sheet>
+			<description>Your Strength and Constitution increase by 4. Your maximum for those scores is now 24</description>
+		</sheet>
+		<rules>
+			<stat name="strength:max" value="4" />
+			<stat name="constitution:max" value="4" />
+			<stat name="strength" value="4" />
+			<stat name="constitution" value="4" />
+		</rules>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Cursed Energy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_CURSED_ENERGY" />
+	<element name="Innate Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_INNATE_TECHNIQUE" />
+	<element name="Unarmored Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNARMORED_DEFENSE" />
+	<element name="Combat Prowess Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_COMBAT_PROWESS" />
+	<element name="Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_FOCUS" />
+	<element name="Reckless Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_RECKLESS_BLOWS" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_ABILITYSCOREIMPROVEMENT_JUGGERNAUT" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_EXTRA_ATTACK" />
+	<element name="Pursuer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_PURSUER" />
+	<element name="Honed Instinct Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_HONED_INSTINCT" />
+	<element name="Brutal Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_BRUTAL_BLOWS" />
+	<element name="Lock In Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_LOCK_IN" />
+	<element name="Endless Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_LOCK_IN" />
+	<element name="Unstoppable Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNSTOPPABLE" />
+</elements>
