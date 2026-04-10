@@ -33,13 +33,13 @@
 		</setters>
 		<rules>
 			<!-- ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI -->
-			<stat name="strength" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="dexterity" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="constitution" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="intelligence" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="wisdom" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="charisma" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Human)" supports="Custom Ability Score Increase 1" number="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)"/>
+			<stat name="strength" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
+			<stat name="dexterity" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
+			<stat name="constitution" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
+			<stat name="intelligence" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
+			<stat name="wisdom" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
+			<stat name="charisma" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Human)" supports="Custom Ability Score Increase 1" number="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)"/>
 
 			<grant type="Size" id="ID_SIZE_MEDIUM"/>
 			<stat name="innate speed" value="30" bonus="base"/>
@@ -50,14 +50,14 @@
 	</element>
 	
 	<!-- Human Variants -->
-	<element name="Jujutsu Sorcerer" type="Race Variant" source="Player’s Handbook" id="ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER">
+	<element name="Jujutsu Sorcerer" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER">
 		<supports>JJK Human Variant</supports>
 		<requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
 		<description>
 			<p>You are part of a family of sorcerers or have been involved from a young age, you gain the following:</p>
 			<p>
 				<span class="feature">Ability Score Increase.</span>One ability score of your choice increases by 2 and another by 1.<br />
-				<span class="feature">Skills.</span>You gain proficiency in martial weapons.<br />
+				<span class="feature">Proficiencies.</span>You gain proficiency in martial weapons.<br />
 				<span class="feature">Trained Cursed Energy.</span>You gain a Cursed Energy feat.<br />
 			</p>
 		</description>
@@ -69,7 +69,7 @@
 			<select type="Feat" name="Cursed Energy Feat (Jujutsu Sorcerer)" />
 		</rules>
 	</element>
-	<element name="Superhuman" type="Race Variant" source="Player’s Handbook" id="ID_RACE_VARIANT_JJK_SUPERHUMAN">
+	<element name="Superhuman" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_SUPERHUMAN">
 		<supports>JJK Human Variant</supports>
 		<description>
 			<p>Very rarely, some humans may be astonishingly stronger than most others in the world, sometimes vastly stronger than the average human. If your human character happens to fall under this category, you can choose to replace the standard Human Ability Score Increase with these traits instead:</p>
