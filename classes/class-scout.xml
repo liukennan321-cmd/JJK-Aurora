@@ -72,10 +72,10 @@
 			<div element="ID_JJK_CLASS_FEATURE_SCOUT_SHARP_EYES" />
 			<div element="ID_JJK_CLASS_FEATURE_SCOUT_ABILITYSCOREIMPROVEMENT_SCOUT" />
 			<div element="ID_JJK_CLASS_FEATURE_SCOUT_EXTRA_ATTACK" />
-			<div element="ID_JJK_CLASS_FEATURE_SCOUT_PURSUER" />
-			<div element="ID_JJK_CLASS_FEATURE_SCOUT_HONED_INSTINCT" />
-			<div element="ID_JJK_CLASS_FEATURE_SCOUT_BRUTAL_BLOWS" />
-			<div element="ID_JJK_CLASS_FEATURE_SCOUT_LOCK_IN" />
+			<div element="ID_JJK_CLASS_FEATURE_SCOUT_EAGLE_EYES" />
+			<div element="ID_JJK_CLASS_FEATURE_SCOUT_EVASION" />
+			<div element="ID_JJK_CLASS_FEATURE_SCOUT_TACTICAL_RETREAT" />
+			<div element="ID_JJK_CLASS_FEATURE_SCOUT_SCANNING_EYES" />
 			<div element="ID_JJK_CLASS_FEATURE_SCOUT_ENDLESS_FOCUS" />
 			<div element="ID_JJK_CLASS_FEATURE_SCOUT_UNSTOPPABLE" />
 		</description>
@@ -103,10 +103,10 @@
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_SHARP_EYES" level="2" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_ABILITYSCOREIMPROVEMENT_SCOUT" level="4" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_EXTRA_ATTACK" level="5" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_PURSUER" level="5" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_HONED_INSTINCT" level="7" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_BRUTAL_BLOWS" level="9" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_LOCK_IN" level="10" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_EAGLE_EYES" level="5" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION" level="7" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_TACTICAL_RETREAT" level="9" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_SCANNING_EYES" level="10" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_ENDLESS_FOCUS" level="15" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SCOUT_UNSTOPPABLE" level="20" />
 		</rules>
@@ -246,8 +246,8 @@
 			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Eagle Eyes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_PURSUER">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_PURSUER</requirements>
+	<element name="Eagle Eyes" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EAGLE_EYES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EAGLE_EYES</requirements>
 		<description>
 			<p>Starting at 5th level, as part of your bonus action while entering a focus, you can move up to half your movement speed towards an enemy.</p>
 		</description>
@@ -259,8 +259,8 @@
 			<stat name="j:p:speed:calculation" value="j:p:speed:half" />
 		</rules>
 	</element>
-	<element name="Evasion" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_HONED_INSTINCT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_HONED_INSTINCT</requirements>
+	<element name="Evasion" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_EVASION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EVASION</requirements>
 		<description>
 			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
 			<p class="indent">Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your focus before doing anything else on that turn.</p>
@@ -269,8 +269,8 @@
 			<description>You have advantage on initiative rolls. If you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn if you enter your focus before doing anything else on that turn.</description>
 		</sheet>
 	</element>
-	<element name="Brutal Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_BRUTAL_BLOWS">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_BRUTAL_BLOWS</requirements>
+	<element name="Brutal Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_TACTICAL_RETREAT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_TACTICAL_RETREAT</requirements>
 		<description>
 			<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</p>
 			<p class="indent">This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
@@ -284,8 +284,8 @@
 			<stat name="j:bb:die" value="3" level="17" bonus="bb"/>
 		</rules>
 	</element>
-	<element name="Tactical Retreat" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_LOCK_IN">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_LOCK_IN</requirements>
+	<element name="Tactical Retreat" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SCOUT_SCANNING_EYES">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SCANNING_EYES</requirements>
 		<description>
 			<p>Starting at 10th level, your focus can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're focusing and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</p>
 			<p class="indent">Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
@@ -328,10 +328,10 @@
 	<element name="Sharp Eyes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SHARP_EYES" />
 	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_ABILITYSCOREIMPROVEMENT_SCOUT" />
 	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EXTRA_ATTACK" />
-	<element name="Eagle Eyes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_PURSUER" />
-	<element name="Evasion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_HONED_INSTINCT" />
-	<element name="Brutal Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_BRUTAL_BLOWS" />
-	<element name="Tactical Retreat Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_LOCK_IN" />
-	<element name="Endless Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_LOCK_IN" />
+	<element name="Eagle Eyes Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EAGLE_EYES" />
+	<element name="Evasion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_EVASION" />
+	<element name="Brutal Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_TACTICAL_RETREAT" />
+	<element name="Tactical Retreat Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SCANNING_EYES" />
+	<element name="Endless Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_SCANNING_EYES" />
 	<element name="Unfathomable Speed Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_SCOUT_UNSTOPPABLE" />
 </elements>
