@@ -31,7 +31,8 @@
 			<set name="height" modifier="2d10">4'8"</set>
 			<set name="weight" modifier="2d4">110 lb.</set>
 		</setters>
-		<rules>ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI
+		<rules>
+			<!-- ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI -->
 			<stat name="strength" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
 			<stat name="dexterity" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
 			<stat name="constitution" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
