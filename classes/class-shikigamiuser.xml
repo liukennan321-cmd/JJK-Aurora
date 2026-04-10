@@ -78,10 +78,10 @@
 			<div element="ID_JJK_CLASS_FEATURE_SHIKIGAMI_USER_PERFECTED_BOND" />
 		</description>
 		<sheet display="false">
-			<description>Cosplay as Megumi.</description>
+			<description>Cosplay as Megumi</description>
 		</sheet>
 		<setters>
-			<set name="short">Cosplay as Megumi.</set>
+			<set name="short">Cosplay as Megumi</set>
 			<set name="hd">d8</set>
 		</setters>
 		<rules>
