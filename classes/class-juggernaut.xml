@@ -139,10 +139,10 @@
 			<stat name="j:ce:points" value="level:juggernaut" />
 			<stat name="j:ce:modifier" value="charisma:modifier" bonus="cursed energy" />
 			<stat name="j:ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
-			<stat name="j:ce:points" value="ce:modifier" />
+			<stat name="j:ce:points" value="j:ce:modifier" />
 			<stat name="j:ce:dc" value="8" />
 			<stat name="j:ce:dc" value="proficiency" />
-			<stat name="j:ce:dc" value="ce:modifier" />
+			<stat name="j:ce:dc" value="j:ce:modifier" />
 			<stat name="j:cu:stat" value="charisma:score" bonus="cursed energy"/>			
 			<stat name="j:cu:stat" value="wisdom:score" bonus="cursed energy" />
 		</rules>
