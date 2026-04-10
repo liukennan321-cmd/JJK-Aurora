@@ -251,8 +251,12 @@
 			<p>Starting at 5th level, as part of your bonus action while entering a focus, you can move up to half your movement speed towards an enemy.</p>
 		</description>
 		<sheet>
-			<description>As part of your bonus action while entering a focus, you can move up to {{speed:half}} ft. towards an enemy.</description>
+			<description>As part of your bonus action while entering a focus, you can move up to {{j:p:speed:calculation}} ft. towards an enemy.</description>
 		</sheet>
+		<rules>
+			<stat name="j:p:speed" value="speed/2" />
+			<stat name="j:p:speed:calculation" value="j:p:speed:half" />
+		</rules>
 	</element>
 	<element name="Honed Instinct" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_HONED_INSTINCT">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_HONED_INSTINCT</requirements>
