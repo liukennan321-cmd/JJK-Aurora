@@ -24,8 +24,8 @@
 			<stat name="f:cebh" value="wisdom:modifier:half:up" bonus="base"/>
 			<stat name="f:ceb" value="charisma:modifier" bonus="base"/>
 			<stat name="f:ceb" value="wisdom:modifier" bonus="base"/>
-			<stat name="ac:misc" value="f:cebh" equipped="[armor:none]" requirements="![unarmored defense:none]"/>
-			<stat name="ac:misc" value="f:ceb" equipped="[armor:none]" requirements="[unarmored defense:none]"/>
+			<stat name="ac:misc" value="f:cebh" equipped="[armor:none]" requirements="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNARMORED_DEFENSE"/>
+			<stat name="ac:misc" value="f:ceb" equipped="[armor:none]" requirements="!ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNARMORED_DEFENSE"/>
 		</rules>
 	</element>
 	
