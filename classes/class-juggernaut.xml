@@ -106,11 +106,11 @@
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_HONED_INSTINCT" level="7" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_BRUTAL_BLOWS" level="9" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_LOCK_IN" level="10" />
-			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ENDLESS_FOCUS" level="13" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ENDLESS_FOCUS" level="15" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNSTOPPABLE" level="20" />
 		</rules>
 		<multiclass id="ID_JJK_MULTICLASS_JUGGERNAUT">
-			<prerequisite>Cpnstitution 13</prerequisite>
+			<prerequisite>Constitution 13</prerequisite>
 			<requirements>([con:13])</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Athletics, light armor, medium armor, shields, simple weapons, martial weapons</set>
@@ -133,18 +133,18 @@
 			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
 		</description>
 		<sheet>
-			<description>You have {{ce:points}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}. Your curse stat is {{cu:stat}}</description>
+			<description>You have {{j:ce:points}} Cursed Energy and your Cursed Energy DC is {{j:ce:dc}}. Your curse stat is {{j:cu:stat}}</description>
 		</sheet>
 		<rules>
-			<stat name="ce:points" value="level:juggernaut" />
-			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
-			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
-			<stat name="ce:points" value="ce:modifier" />
-			<stat name="ce:dc" value="8" />
-			<stat name="ce:dc" value="proficiency" />
-			<stat name="ce:dc" value="ce:modifier" />
-			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>			
-			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy" />
+			<stat name="j:ce:points" value="level:juggernaut" />
+			<stat name="j:ce:modifier" value="charisma:modifier" bonus="cursed energy" />
+			<stat name="j:ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
+			<stat name="j:ce:points" value="ce:modifier" />
+			<stat name="j:ce:dc" value="8" />
+			<stat name="j:ce:dc" value="proficiency" />
+			<stat name="j:ce:dc" value="ce:modifier" />
+			<stat name="j:cu:stat" value="charisma:score" bonus="cursed energy"/>			
+			<stat name="j:cu:stat" value="wisdom:score" bonus="cursed energy" />
 		</rules>
 	</element>
 	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_INNATE_TECHNIQUE">
@@ -189,19 +189,33 @@
 			When you use the Attack action with an unarmed strike or a combat prowess weapon on your turn, you can make one unarmed strike or grapple as a bonus action.</description>
 		</sheet>
 		<rules>
-			<stat name="combat prowess:dice" value="4" bonus="combat prowess" />
-			<stat name="combat prowess:dice" value="6" bonus="combat prowess" level="5" />
-			<stat name="combat prowess:dice" value="8" bonus="combat prowess" level="11" />
-			<stat name="combat prowess:dice" value="10" bonus="combat prowess" level="17" />
+			<stat name="combat prowess:dice" value="6" bonus="combat prowess" />
+			<stat name="combat prowess:dice" value="8" bonus="combat prowess" level="5" />
+			<stat name="combat prowess:dice" value="10" bonus="combat prowess" level="11" />
+			<stat name="combat prowess:dice" value="12" bonus="combat prowess" level="17" />
 		</rules>
 	</element>
 	<element name="Focus" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_FOCUS">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_FOCUS</requirements>
 		<description>
-			<p>At 2nd level, your attunement with your shikigami has increased. Any bonuses or actions granted to you by your technique are also granted to your Shikigami Companion (other than summons), drawing from your pool of CE.</p>
+			<p>At 2nd level, in battle, you fight with an unstoppable focus. On your turn, you can enter a focus as a bonus action. While focused, you gain the following benefits if you aren't wearing heavy armor:</p>
+			<ul>
+				<li>You have advantage on Strength checks and Strength saving throws.</li>
+				<li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
+			</ul>
+			<p>Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action. Once you have focused a number of times equal to your proficiency modifier, you must finish a long rest before you can focus again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{Proficiency}}/Long Rest">
+			<description>If you aren't wearing heavy armor, you have advantage on Strength checks and Strength saving throws and you have resistance to bludgeoning, piercing, and slashing damage. Your focus lasts for 1 minute. It ends early if you are knocked unconscious. You can also end your focus on your turn as a bonus action.</description>
+		</sheet>
+	</element>
+	<element name="Reckless Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_RECKLESS_BLOWS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_RECKLESS_BLOWS</requirements>
+		<description>
+			<p>Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</p>
 		</description>
 		<sheet>
-			<description>Any bonuses or actions granted to you by your technique are also granted to your Shikigami Companion (other than summons), drawing from your pool of CE.</description>
+			<description>When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ABILITYSCOREIMPROVEMENT_JUGGERNAUT">
@@ -212,139 +226,107 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (Shikigami User 4)" supports="Improvement Option,Shikigami User,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (Shikigami User 8)" supports="Improvement Option,Shikigami User,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Shikigami User 12)" supports="Improvement Option,Shikigami User,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Shikigami User 16)" supports="Improvement Option,Shikigami User,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Shikigami User 19)" supports="Improvement Option,Shikigami User,19" level="19" />
+			<select type="Class Feature" name="Improvement Option (Juggernaut 4)" supports="Improvement Option,Juggernaut,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Juggernaut 8)" supports="Improvement Option,Juggernaut,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Juggernaut 12)" supports="Improvement Option,Juggernaut,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Juggernaut 16)" supports="Improvement Option,Juggernaut,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Juggernaut 19)" supports="Improvement Option,Juggernaut,19" level="19" />
 		</rules>
 	</element>
-	<element name="Coordinated Blow" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_COORDINATED_BLOW">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_COORDINATED_BLOW</requirements>
+	<element name="Extra Attack" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_EXTRA_ATTACK">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_EXTRA_ATTACK</requirements>
 		<description>
-			<p>Beginning at 5th level, you and your shikigami strike as one. As part of the attack action, you can command your shikigami to move and attack a creature within range or take a different action.</p>
+			<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 		</description>
 		<sheet>
-			<description>As part of the attack action, you can command your shikigami to move and attack a creature within range or take a different action.</description>
-		</sheet>
-	</element>
-	<element name="Shikigami Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_SHIKIGAMI_IMPROVEMENT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_SHIKIGAMI_IMPROVEMENT</requirements>
-		<description>
-			<p>Starting at 7th level, your shikigami grows stronger. Your shikigami gains the following benefits:</p>
-			<ul>
-				<li>It gains a hover speed equal to its walking speed.</li>
-				<li>Its strike attacks deal 1d6 extra necrotic damage.</li>
-				<li>You can either choose for your shikigami to become medium or gain the ability to become any weapon, dealing an additional 1d6 necrotic damage on a hit.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>Your shikigami gains a hover speed of 40ft. Its strike attacks deal 1d6 extra necrotic damage.</description>
+			<description>You can attack twice, instead of once, whenever you take the Attack action on your turn.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Shikigami Improvement" supports="Shikigami Improvement Choice"/>
+			<stat name="extra attack:count" value="2" level="5" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Size Increase" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_SIZE_INCREASE">
-		<supports>Shikigami Improvement Choice</supports>
+	<element name="Pursuer" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_PURSUER">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_PURSUER</requirements>
 		<description>
-			<p>Your shikigami increases by 1 size</p>
+			<p>Starting at 5th level, as part of your bonus action while entering a focus, you can move up to half your movement speed towards an enemy.</p>
 		</description>
 		<sheet>
-			<description>Your shikigami increases by 1 size</description>
+			<description>As part of your bonus action while entering a focus, you can move up to {{speed:half}} ft. towards an enemy.</description>
 		</sheet>
 	</element>
-	<element name="Damage Increase" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_DAMAGE_INCREASE">
-		<supports>Shikigami Improvement Choice</supports>
+	<element name="Honed Instinct" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_HONED_INSTINCT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_HONED_INSTINCT</requirements>
 		<description>
-			<p>Your shikigami deals an additional 1d6 necrotic on a hit.</p>
+			<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p>
+			<p class="indent">Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your focus before doing anything else on that turn.</p>
 		</description>
 		<sheet>
-			<description>Your shikigami deals an additional 1d6 necrotic on a hit.</description>
+			<description>You have advantage on initiative rolls. If you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn if you enter your focus before doing anything else on that turn.</description>
 		</sheet>
 	</element>
-	<element name="United Front" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNITED_FRONT">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNITED_FRONT</requirements>
+	<element name="Brutal Blows" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_BRUTAL_BLOWS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_BRUTAL_BLOWS</requirements>
 		<description>
-			<p>At 10th level, your shikigami finds new ways to help you in combat. After an attack, you can choose for your shikigami to do one of the following if they are within 5ft of you or the enemy:</p>
-			<ul>
-				<li>The attack's target takes 1d8 necrotic damage from the shikigami.</li>
-				<li>The attack's target must succeed on a Strength saving throw against your CE save DC or be moved by the shikigami up to 15 feet horizontally in a direction of your choice and knocked prone.</li>
-				<li>You are moved by the shikigami 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</li>
-			</ul>
+			<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</p>
+			<p class="indent">This increases to two additional dice at 13th level and three additional dice at 17th level.</p>
 		</description>
 		<sheet>
-			<description>After an attack, if your shikigami is within 5 feet of you or the target of the attack, you can choose for your shikigami to do 1d8 more damage to the target, move the target one up to 15 feet horizontally in a direction of your choice and knock them prone unless they succeed on a Strength saving throw against your CE save DC, or move you 5 feet horizontally in a direction of your choice, gaining half cover until the beginning of your next turn.</description>
-		</sheet>
-	</element>
-	<element name="Advanced Shikigami" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ADVANCED_SHIKIGAMI">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_ADVANCED_SHIKIGAMI</requirements>
-		<description>
-			<p>Beginning at 13th level, your shikigami grows stronger. Your shikigami gains the following benefits:</p>
-			<ul>
-				<li>You can spread out 4 points among its ability scores (max of 20).</li>
-				<li>Its strike attacks deal 1d6 extra necrotic damage(total of 2d6).</li>
-				<li>You can either choose for your shikigami to become large, or gain the ability to become any weapon, dealing an additional 2d6 necrotic damage.</li>
-			</ul>
-		</description>
-		<sheet>
-			<description>Your shikigami gains 4 ability points among its ability scores (max of 20). Its strike attacks deal 1d6 extra necrotic damage(total of 2d6).</description>
+			<description>You can roll {{j:bb:die}} additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Advanced Shikigami" supports="Advanced Shikigami Choice"/>
+			<stat name="j:bb:die" value="1" level="9" bonus="bb"/>
+			<stat name="j:bb:die" value="2" level="13" bonus="bb"/>
+			<stat name="j:bb:die" value="3" level="17" bonus="bb"/>
 		</rules>
 	</element>
-	<element name="Size Increase 2" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_SIZE_INCREASE2">
-		<supports>Advanced Shikigami Choice</supports>
+	<element name="Lock In" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_LOCK_IN">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_LOCK_IN</requirements>
 		<description>
-			<p>Your shikigami increases by 1 size</p>
+			<p>Starting at 10th level, your focus can keep you fighting despite grievous wounds. If you drop to 0 hit points while you're focusing and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.</p>
+			<p class="indent">Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</p>
 		</description>
 		<sheet>
-			<description>Your shikigami increases by 1 size</description>
+			<description>If you drop to 0 hit points while you're focusing and don't die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</description>
 		</sheet>
 	</element>
-	<element name="Damage Increase 2" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_DAMAGE_INCREASE2">
-		<supports>Advanced Shikigami Choice</supports>
+	<element name="Endless Focus" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_ENDLESS_FOCUS">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_ENDLESS_FOCUS</requirements>
 		<description>
-			<p>Your shikigami deals an additional 2d6 necrotic on a hit.</p>
+			<p>Beginning at 15th level, your focus is so fierce that it only ends if you fall unconscious or if you choose to end it.</p>
 		</description>
 		<sheet>
-			<description>Your shikigami deals an additional 2d6 necrotic on a hit.</description>
+			<description>Your focus only ends if you fall unconscious or if you choose to end it.</description>
 		</sheet>
 	</element>
-	<element name="Swift Escape" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_SWIFT_ESCAPE">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_SWIFT_ESCAPE</requirements>
+	<element name="Unstoppable" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_UNSTOPPABLE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNSTOPPABLE</requirements>
 		<description>
-			<p>At 17th level, your character is rescued at the last moment by your shikigami. When you take damage, you can use your reaction to give yourself resistance to that damage. You are moved by your shikigami and you are moved to an unoccupied space that you can see within your shikigami’s movement speed, where you reappear with the shikigami. You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p>At 20th level, you are aware of your role in society and will do your best to fulfill it. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</p>
 		</description>
-		<sheet action="Reaction" usage="{{se:pr}}/Long Rest">
-			<description>You gain resistance to damage. You are moved by your shikigami up to your shikigami’s movement speed to an unoccupied space that you can see where you reappear with the shikigami.</description>
+		<sheet>
+			<description>Your Strength and Constitution increase by 4. Your maximum for those scores is now 24</description>
 		</sheet>
 		<rules>
-			<stat name="se:pr" value="proficiency" />
+			<stat name="strength:max" value="4" />
+			<stat name="constitution:max" value="4" />
+			<stat name="strength" value="4" />
+			<stat name="constitution" value="4" />
 		</rules>
-	</element>
-	<element name="Perfected Bond" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_JUGGERNAUT_PERFECTED_BOND">
-		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_PERFECTED_BOND</requirements>
-		<description>
-			<p>At 20th level, your shikigami no longer needs to be commanded, having perfect synchronicity. Your shikigami no longer takes any action to command, and you can share senses with it.</p>
-		</description>
-		<sheet>
-			<description>Your shikigami no longer takes any action to command, and you can share senses with it.</description>
-		</sheet>
 	</element>
 
 	<!--Feature Replacement Grants-->
 	<element name="Cursed Energy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_CURSED_ENERGY" />
 	<element name="Innate Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_INNATE_TECHNIQUE" />
-	<element name="Shikigami Companion Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_SHIKIGAMI_COMPANION" />
-	<element name="Combat Prowess Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_MARTIAL_ARTS" />
-	<element name="Shared Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_SHARED_TECHNIQUE" />
+	<element name="Unarmored Defense Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNARMORED_DEFENSE" />
+	<element name="Combat Prowess Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_COMBAT_PROWESS" />
+	<element name="Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_FOCUS" />
+	<element name="Reckless Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_RECKLESS_BLOWS" />
 	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_ABILITYSCOREIMPROVEMENT_JUGGERNAUT" />
-	<element name="Coordinated Blow Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_COORDINATED_BLOW" />
-	<element name="Shikigami Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_SHIKIGAMI_IMPROVEMENT" />
-	<element name="United Front Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNITED_FRONT" />
-	<element name="Advanced Shikigami Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_ADVANCED_SHIKIGAMI" />
-	<element name="Swift Escape Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_SWIFT_ESCAPE" />
-	<element name="Perfected Bond Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_PERFECTED_BOND" />
+	<element name="Extra Attack Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_EXTRA_ATTACK" />
+	<element name="Pursuer Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_PURSUER" />
+	<element name="Honed Instinct Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_HONED_INSTINCT" />
+	<element name="Brutal Blows Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_BRUTAL_BLOWS" />
+	<element name="Lock In Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_LOCK_IN" />
+	<element name="Endless Focus Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_LOCK_IN" />
+	<element name="Unstoppable Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_JUGGERNAUT_UNSTOPPABLE" />
 </elements>
