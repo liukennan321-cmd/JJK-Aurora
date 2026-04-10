@@ -15,8 +15,7 @@
 		<p>You can enhance your body with Cursed energy. While not wearing armor, you add your Cursed Energy modifier to your AC. This becomes half your modifier (rounded up) if you have a feature such as Unarmored Defense. Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend cursed energy up to your Cursed Energy modifier and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws.</p>
 	  </description>
 		<sheet>
-			<description>While not wearing armor, your AC increases by {{f:ceb}}. This becomes {{f:cebh}} if you have a feature such as Unarmored Defense.
-			Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend up to {{f:ceb}} CE and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws</description>
+			<description>While not wearing armor, your AC increases by {{f:ceb}}. This becomes {{f:cebh}} if you have a feature such as Unarmored Defense. Additionally, you can use your Cursed Energy modifier for unarmed strikes in place of Strength or Dexterity. As a reaction you can spend up to {{f:ceb}} CE and gain a bonus to a physical saving throw equal to the cursed energy spent. If you have Reverse Cursed Technique, you can also use this feature for mental saving throws</description>
 		</sheet>
 		<rules>
 			<stat name="f:cebh" value="charisma:modifier:half:up" bonus="base"/>
