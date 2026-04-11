@@ -19,9 +19,9 @@
 				<span class="feature">Alignment.</span>Cursed Corpses are almost always neutral people, not caring about what happens to others around them and usually wanting to exist peacefully.<br />
 				<span class="feature">Size.</span>Your size can be small to large.<br />
 				<span class="feature">Speed.</span>Your base walking speed is 35 feet.<br />
-        <span class="feature">Unnatural.</span>As a construct, you don’t need to breathe, drink, eat, or sleep. However you need materials to mend yourself during a rest.<br />
+       		 	<span class="feature">Unnatural.</span>As a construct, you don’t need to breathe, drink, eat, or sleep. However you need materials to mend yourself during a rest.<br />
 				<span class="feature">Languages.</span>You can speak, read, and write Common.<br />
-        <span class="feature">Subrace.</span>There are multiple forms of corpses. The soft bodies range from plush like, to normal living materials like flesh. Hard Shell is the hard skinned stone, wood, or metal.<br />
+       		 	<span class="feature">Subrace.</span>There are multiple forms of corpses. The soft bodies range from plush like, to normal living materials like flesh. Hard Shell is the hard skinned stone, wood, or metal.<br />
 			</p>
 		</description>
 		<sheet display="false" />
@@ -37,105 +37,118 @@
 			<select type="Ability Score Improvement" name="Ability Score Increase +4 (Cursed Corpse)" supports="Purpose Built Ability Score Increase" number="1" />
 			<grant type="Size" id="ID_SIZE_MEDIUM" />
 			<stat name="innate speed" value="35" bonus="base" />
-      <grant type="Racial Trait" id="ID_JJK_FEATURE_UNNATURAL" />
+      		<grant type="Racial Trait" id="ID_JJK_FEATURE_UNNATURAL" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Race Variant" name="JJK Human Variant" supports="JJK Human Variant" optional="true" />
 		</rules>
 	</element>
 	<!-- ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI -->
-  <element name="Unnatural" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_UNNATURAL">
-    <description>
-		  <p>As a construct, you don’t need to breathe, drink, eat, or sleep. However you need materials to mend yourself during a rest.</p>
-	  </description>
-	  <sheet>
-		  <description>You don’t need to breathe, drink, eat, or sleep. However you need materials to mend yourself during a rest.</description>
-  	</sheet>
-  </element>
-	<!-- Human Variants -->
-	<element name="Jujutsu Sorcerer" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER">
-		<supports>JJK Human Variant</supports>
-		<requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
+  	<element name="Unnatural" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_UNNATURAL">
+    	<description>
+			<p>As a construct, you don’t need to breathe, drink, eat, or sleep. However you need materials to mend yourself during a rest.</p>
+	  	</description>
+	  	<sheet>
+		 	<description>You don’t need to breathe, drink, eat, or sleep. However you need materials to mend yourself during a rest.</description>
+  		</sheet>
+  	</element>
+	<element name="Strength +4" type="Ability Score Improvement" source="JJK" id="ID_ASI_PURPOSE_BUILT_STR">
+		<supports>Purpose Built Ability Score Increase</supports>
+		<rules>
+			<stat name="strength" value="4" />
+		</rules>
+	</element>
+	<element name="Dexterity +4" type="Ability Score Improvement" source="JJK" id="ID_ASI_PURPOSE_BUILT_DEX">
+		<supports>Purpose Built Ability Score Increase</supports>
+		<rules>
+			<stat name="dexterity" value="4" />
+		</rules>
+	</element>
+	<element name="Constitution +4" type="Ability Score Improvement" source="JJK" id="ID_ASI_PURPOSE_BUILT_CON">
+		<supports>Purpose Built Ability Score Increase</supports>
+		<rules>
+			<stat name="constitution" value="4" />
+		</rules>
+	</element>
+	<element name="Intelligence +4" type="Ability Score Improvement" source="JJK" id="ID_ASI_PURPOSE_BUILT_INT">
+		<supports>Purpose Built Ability Score Increase</supports>
+		<rules>
+			<stat name="intelligence" value="4" />
+		</rules>
+	</element>
+	<element name="Wisdom +4" type="Ability Score Improvement" source="JJK" id="ID_ASI_PURPOSE_BUILT_WIS">
+		<supports>Purpose Built Ability Score Increase</supports>
+		<rules>
+			<stat name="wisdom" value="4" />
+		</rules>
+	</element>
+	<element name="Charisma +4" type="Ability Score Improvement" source="JJK" id="ID_ASI_PURPOSE_BUILT_CHA">
+		<supports>Purpose Built Ability Score Increase</supports>
+		<rules>
+			<stat name="charisma" value="4" />
+		</rules>
+	</element>
+	<!-- Cursed Corpse Variants -->
+	<element name="Softbody" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_SOFTBODY">
+		<supports>JJK Cursed Corpse Variant</supports>
 		<description>
-			<p>You are part of a family of sorcerers or have been involved from a young age, you gain the following:</p>
+			<p>The simpler, more life-like Cursed Corpses are soft bodies, with their life-like design having both advantages and flaws.</p>
 			<p>
-				<span class="feature">Ability Score Increase.</span>One ability score of your choice increases by 2 and another by 1.<br />
-				<span class="feature">Proficiencies.</span>You gain proficiency in martial weapons.<br />
-				<span class="feature">Trained Cursed Energy.</span>You gain a Cursed Energy feat.<br />
+				<span class="feature">Tailored Appearance.</span>You gain expertise in either intimidation, persuasion, or performance.<br />
+				<span class="feature">Surprise.</span>You can make a Performance check to disguise yourself as what you resemble. Your sudden reveal may stun an enemy. Once per long rest when you reveal yourself, you can force a creature within 10 feet to make a Wisdom saving throw:(DC 10 + your proficiency bonus + your Charisma modifier) becoming stunned until the beginning of their turn on failure.<br />
 			</p>
 		</description>
-		<sheet alt="Human" display="false"/>
+		<sheet alt="Cursed Corpse" display="false"/>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase +2 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 2" number="1" />
-			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 1" number="1" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-			<select type="Feat" name="Cursed Energy Feat (Jujutsu Sorcerer)" />
+			<select type="Proficiency" name="Expertise (Cursed Corpse)" supports="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_INTIMIDATION_DOUBLE||ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_PERSUASION_DOUBLE||ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_PERFORMANCE_DOUBLE" number="1" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_SURPRISE" />
 		</rules>
 	</element>
-	<element name="Superhuman" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_SUPERHUMAN">
-		<supports>JJK Human Variant</supports>
+	<element name="Surprise" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SURPRISE">
 		<description>
-			<p>Very rarely, some humans may be astonishingly stronger than most others in the world, sometimes vastly stronger than the average human. If your human character happens to fall under this category, you can choose to replace the standard Human Ability Score Increase with these traits instead:</p>
+			<p>You can make a Performance check to disguise yourself as what you resemble. Your sudden reveal may stun an enemy. Once per long rest when you reveal yourself, you can force a creature within 10 feet to make a Wisdom saving throw:(DC 10 + your proficiency bonus + your Charisma modifier) becoming stunned until the beginning of their turn on failure.</p>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can make a Performance check to disguise yourself as what you resemble. When you reveal yourself, you can force a creature within 10 feet to make a Wisdom saving throw DC{{jjk:surprise:dc}}, becoming stunned until the beginning of their turn on failure.</description>
+		</sheet>
+		<rules>
+			<stat name="jjk:surprise:dc" value="8" />
+			<stat name="jjk:surprise:dc" value="proficiency" />
+			<stat name="jjk:surprise:dc" value="charisma:modifier" />
+	</element>
+	<element name="Hard Shell" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_HARD_SHELL">
+		<supports>JJK Cursed Corpse Variant</supports>
+		<description>
+			<p>The more complicated intricate form of Cursed Corpses are the hard shells. Their combat ability is not to be underestimated.</p>
 			<p>
-				<span class="feature">Ability Score Increase.</span>You increase either your Strength, Dexterity, or Constitution score by 2 and the others by 1.<br />
-				<span class="feature">Natural Athlete.</span>You have proficiency in the Athletics skill, if you already have proficiency, you instead gain Expertise.<br />
-				<span class="feature">Record Breaker.</span>Your jumping distance is doubled.<br />
-				<span class="feature">Uncanny Endurance.</span>You can focus on occasionally shrugging off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest.<br />
-				<span class="feature">Powerful Build.</span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br />
-				<span class="feature">Speed.</span>Your movement speed is 35 feet.<br />
+				<span class="feature">Integrated Armor.</span>Your body has built-in defensive layers, which can be enhanced with armor.
+				<ul>
+					<li>You gain a +1 bonus to Armor Class.</li>
+					<li>You can don only armor with which you have proficiency. To don armor, you must incorporate it into your body over the course of 1 hour, during which you must remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way.</li>
+					<li>While you live, your armor can't be removed from your body against your will.</li>
+				</ul>
+				<br />
 			</p>
 		</description>
-		<sheet alt="Human" display="false"/>
+		<sheet alt="Cursed Corpse" display="false"/>
 		<rules>
-			<select type="Ability Score Improvement" name="Superhuman Ability Score Increase" supports="Superhuman ASI Choice" number="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Superhuman)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" number="1" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Superhuman)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" number="2"/>
-			<grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
-			<stat name="innate speed" value="35" bonus="base"/>
-			<grant type="Size" id="ID_SIZE_LARGE" />
-			<grant type="Racial Trait" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE" />
-			<grant type="Racial Trait" id="ID_JJK_FEATURE_RECORD_BREAKER" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_INTEGRATED_ARMOR" />
 		</rules>
 	</element>
-	<!-- Superhuman Ability Score Bundles -->
-	<element name="Superhuman Strength Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_STR">
-		<supports>Superhuman ASI Choice</supports>
+	<element name="Integrated Armor" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_INTEGRATED_ARMOR">
+		<description>
+			<p>Your body has built-in defensive layers, which can be enhanced with armor.</p>
+			<ul>
+				<li>You gain a +1 bonus to Armor Class.</li>
+				<li>You can don only armor with which you have proficiency. To don armor, you must incorporate it into your body over the course of 1 hour, during which you must remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way.</li>
+				<li>While you live, your armor can't be removed from your body against your will.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You can don only armor with which you have proficiency. To don armor, you must incorporate it into your body over the course of 1 hour, during which you must remain in contact with the armor. To doff armor, you must spend 1 hour removing it. You can rest while donning or doffing armor in this way. While you live, your armor can't be removed from your body against your will.</description>
+		</sheet>
 		<rules>
-			<stat name="strength" value="2" />
-			<stat name="dexterity" value="1" />
-			<stat name="constitution" value="1" />
+			<stat name="ac:misc" value="1" />
 		</rules>
-	</element>
-	<element name="Superhuman Dexterity Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_DEX">
-		<supports>Superhuman ASI Choice</supports>
-		<rules>
-			<stat name="strength" value="1" />
-			<stat name="dexterity" value="2" />
-			<stat name="constitution" value="1" />
-		</rules>
-	</element>
-	<element name="Superhuman Constitution Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_CON">
-		<supports>Superhuman ASI Choice</supports>
-		<rules>
-			<stat name="strength" value="1" />
-			<stat name="dexterity" value="1" />
-			<stat name="constitution" value="2" />
-		</rules>
-	</element>
-	<element name="Uncanny Endurance" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE">
-	<description>
-		<p>When you take damage, you can use your reaction to roll a d12 and add your Constitution modifier, reducing the damage by that total. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
-	</description>
-	<sheet action="Reaction" usage="1/Short Rest">
-		<description>When you take damage roll a d12 and add {{constitution:modifier}}, reducing the damage by that total</description>
-	</sheet>
-	</element>
-	<element name="Record Breaker" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_RECORD_BREAKER">
-	<description>
-		<p>Your jumping distance is doubled.</p>
-	</description>
-	<sheet>
-		<description>Your jumping distance is doubled.</description>
-	</sheet>
 	</element>
 </elements>
