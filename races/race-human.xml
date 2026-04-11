@@ -40,8 +40,8 @@
 			<stat name="charisma" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
 			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Human)" supports="Custom Ability Score Increase 1" number="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)"/>
 
-			<grant type="Size" id="ID_SIZE_MEDIUM"/>
-			<stat name="innate speed" value="30" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_MEDIUM" requirements="!ID_RACE_VARIANT_JJK_SUPERHUMAN" />
+			<stat name="innate speed" value="30" bonus="base" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
 			<select type="Race Variant" name="JJK Human Variant" supports="JJK Human Variant" optional="true" />
@@ -89,6 +89,7 @@
 			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Superhuman)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" number="2"/>
 			<grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
 			<stat name="innate speed" value="35" bonus="base"/>
+			<grant type="Size" id="ID_SIZE_LARGE" />
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE" />
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_RECORD_BREAKER" />
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_POWERFUL_BUILD" />
