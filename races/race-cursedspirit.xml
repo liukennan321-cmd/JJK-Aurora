@@ -4,7 +4,7 @@
 		<name>Cursed Spirit</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="race-cursedspirit.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedspirit.xml" />
 		</update>
 	</info>
@@ -150,6 +150,79 @@
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
 			<select type="Proficiency" name="Skill, Fearmonger" number="1" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Disease" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_DISEASE">
+		<supports>JJK Cursed Spirit Variant</supports>
+		<description>
+			<p>Plague and sickness are concepts cursed by humanity, giving rise to powerful curses.</p>
+			<p>
+				<span class="feature">Born from Disease.</span>You are immune to disease and poison, as well as the poisoned condition. Your unarmed strikes deal 1d4 poison damage on a hit.<br />
+				<span class="feature">Walking Sickness.</span>As an action, you can force all creatures within 30 feet of you to make a Constitution saving throw against your Cursed Energy save DC. On a failure, they gain the poisoned condition for 1 minute. A creature can repeat this save at the end of their turn. Once you use this feature, you cannot use it again until you complete a long rest.<br />
+			</p>
+		</description>
+		<sheet alt="Cursed Spirit" display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_BORN_FROM_DISEASE" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_WALKING_SICKNESS" />
+		</rules>
+	</element>
+	<element name="Born from Disease" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_BORN_FROM_DISEASE">
+		<description>
+			<p>You are immune to disease and poison, as well as the poisoned condition. Your unarmed strikes deal 1d4 poison damage on a hit.</p>
+		</description>
+		<sheet>
+			<description>You are immune to disease and poison, as well as the poisoned condition. Your unarmed strikes deal 1d4 poison damage on a hit.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+		</rules>
+	</element>
+	<element name="Walking Sickness" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_WALKING_SICKNESS">
+		<description>
+			<p>As an action, you can force all creatures within 30 feet of you to make a Constitution saving throw against your Cursed Energy save DC. On a failure, they gain the poisoned condition for 1 minute. A creature can repeat this save at the end of their turn. Once you use this feature, you cannot use it again until you complete a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can force all creatures within 30 feet of you to make a Constitution saving throw DC{{ce:dc}}. On a failure, they gain the poisoned condition for 1 minute. A creature can repeat this save at the end of their turn.</description>
+		</sheet>
+	</element>
+	<element name="Cursed Womb" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_CURSED_WOMB">
+		<supports>JJK Cursed Spirit Variant</supports>
+		<description>
+			<p>You are a young cursed spirit that has yet to develop.</p>
+			<p>
+				<span class="feature">Hard Shell.</span>Your AC equals 14 + your Constitution modifier while not wearing armor.<br />
+				<span class="feature">Strong Constitution</span>Your hit point maximum increases by an amount equal to your level and increases by 1 whenever you gain a level.<br />
+			</p>
+		</description>
+		<sheet alt="Cursed Spirit" display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_CB_HARD_SHELL" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_STRONG_CONSTITUTION" />
+		</rules>
+	</element>
+	<element name="Hard Shell" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_CB_HARD_SHELL">
+		<description>
+			<p>Your AC equals 14 + your Constitution modifier while not wearing armor.</p>
+		</description>
+		<sheet>
+			<description>While you are wearing no armor, your AC equals {{ac:hard shell}}.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:hard shell" value="14" />
+			<stat name="ac:hard shell" value="constitution:modifier" />
+			<stat name="ac:calculation" value="ac:hard shell" bonus="calculation" equipped="[armor:none]" alt="Hard Shell (Cursed Womb)" />
+		</rules>
+	</element>
+	<element name="Strong Constitution" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_STRONG_CONSTITUTION">
+		<description>
+			<p>Your hit point maximum increases by an amount equal to your level and increases by 1 whenever you gain a level.</p>
+		</description>
+		<sheet>
+			<description>Your hit point maximum increases by {{level}}.</description>
+		</sheet>
+		<rules>
+			<stat name="hp" value="level" />
 		</rules>
 	</element>
 </elements>
