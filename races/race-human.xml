@@ -4,7 +4,7 @@
 		<name>Human</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-human.xml" />
 		</update>
 	</info>
@@ -84,7 +84,9 @@
 		</description>
 		<sheet alt="Human" display="false"/>
 		<rules>
-			<select type="Ability Score Improvement" name="Superhuman Ability Score Increase" supports="Superhuman ASI Choice" number="1" />
+			<select type="Ability Score Improvement" name="Superhuman Ability Score Increase" supports="Superhuman ASI Choice" number="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Superhuman)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" number="1" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Superhuman)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" number="2"/>
 			<grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
 			<stat name="innate speed" value="35" bonus="base"/>
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE" />
@@ -119,5 +121,8 @@
 	<description>
 		<p>When you take damage, you can use your reaction to roll a d12 and add your Constitution modifier, reducing the damage by that total. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
 	</description>
+	<sheet action="Reaction" usage="1/Short Rest">
+		<description>When you take damage roll a d12 and add {{constitution:modifier}}, reducing the damage by that total</description>
+	</sheet>
 </element>
 </elements>
