@@ -4,7 +4,7 @@
 		<name>JJK</name>
 		<description>JJK Homebrew.</description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="jjk.index" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/jjk.index" />
 		</update>
 	</info>
@@ -22,6 +22,7 @@
 
 		<!-- races -->
 		<file name="race-cursedcorpse.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedcorpse.xml" />
+		<file name="race-cursedspirit.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedspirit.xml" />
 		<file name="race-cursedvessel.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedvessel.xml" />
 		<file name="race-human.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-human.xml" />
 
