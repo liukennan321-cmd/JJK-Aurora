@@ -15,125 +15,141 @@
 			<p> Beings made up of negative energy, festering over time.</p>
 			<p>
 				<span class="feature">Ability Score Increase.</span>You increase one ability score of your choice by 2 and another by 1.<br />
-        <span class="feature">Creature Type.</span>You are undead.<br />
+        		<span class="feature">Creature Type.</span>You are undead.<br />
 				<span class="feature">Age.</span>You are cursed to live forever.<br />
 				<span class="feature">Alignment.</span>Cursed Spirits rarely maintain any level of intelligence, but when they do, their alignment turns towards being more Chaotic or Evil.<br />
 				<span class="feature">Size.</span>Your size can be Small or Medium.<br />
 				<span class="feature">Speed.</span>Your base walking speed is 30 feet.<br />
-				<span class="feature">Languages.</span>You can speak, read, and write Common.<br />
+				<span class="feature">Spiritual Nature.</span>You function completely differently from normal creatures:
+				<ul>
+					<li>You don’t need to eat, drink, breathe or sleep, but must remain inactive for 4 hours a day to gain the benefits of a long rest.</li>
+					<li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>
+					<li>You are immune to nonmagical bludgeoning, piercing, or slashing.</li>
+					<li>You are invisible to creatures without cursed energy.</li>
+				</ul><br />
+				<span class="feature">Cursed Energy Affinity.</span>Due to your nature of being made of cursed energy, you are unable to utilize reverse cursed technique which is positive energy. Though you can still restore your body with pure cursed energy. Starting at 5th level, you can spend cursed energy up to your CE modifier to regain 5 hit points per cursed energy spent as an action once per turn.<br />
+				<span class="feature">Subrace.</span>There are several types of cursed spirits, depending on your origin.<br />
 			</p>
 		</description>
 		<sheet display="false" />
-		<setters>
-			<set name="names" type="male">Yuji, Megumi, Satoru, Suguru, Kento, Toge, Yuta, Aoi, Kokichi, Noritoshi, Takuma, Atsuya, Masamichi, Naobito, Naoya, Jin, Wasuke, Hiromi, Takaba, Ryu, Hajime, Toji</set>
-			<set name="names" type="female">Nobara, Maki, Mai, Mei, Utahime, Shoko, Kasumi, Yuki, Rika, Akari, Nagi, Misato</set>
-			<set name="names" type="surname">Itadori, Fushiguro, Kugisaki, Gojo, Geto, Nanami, Zenin, Inumaki, Okkotsu, Todo, Nishimiya, Iori, Ieiri, Muta, Miwa, Kamo, Ino, Kusakabe, Yaga, Higuruma, Takaba, Ishigori, Kashimo</set>
-			<set name="names-format">{{name}} {{surname}}</set>
-			<set name="height" modifier="2d10">5'8"</set>
-			<set name="weight" modifier="2d4">110 lb.</set>
-		</setters>
 		<rules>
-			<stat name="strength" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="dexterity" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="constitution" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="intelligence" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="wisdom" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<stat name="charisma" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
-			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Human)" supports="Custom Ability Score Increase 1" number="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)"/>
-
-			<grant type="Size" id="ID_SIZE_MEDIUM" requirements="!ID_RACE_VARIANT_JJK_SUPERHUMAN" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +2 (Cursed Spirit)" supports="Custom Ability Score Increase 2" number="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Cursed Spirit)" supports="Custom Ability Score Increase 1" number="1" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_UNDEAD" />
+			<select type="Racial Trait" name="Size (Cursed Spirit)" supports="ID_INTERNAL_RACIAL_TRAIT_SMALL|ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
 			<stat name="innate speed" value="30" bonus="base" />
-			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
-			<select type="Race Variant" name="JJK Human Variant" supports="JJK Human Variant" optional="true" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_SPIRITUAL_NATURE" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_CURSED_ENERGY_AFFINITY" />
+			<select type="Race Variant" name="JJK Cursed Spirit Variant" supports="JJK Cursed Spirit Variant" />
 		</rules>
 	</element>
 	<!-- ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI -->
-
-	<!-- Human Variants -->
-	<element name="Jujutsu Sorcerer" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER">
-		<supports>JJK Human Variant</supports>
-		<requirements>ID_INTERNAL_OPTION_ALLOW_FEATS</requirements>
+	<element name="Undead" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_UNDEAD">
 		<description>
-			<p>You are part of a family of sorcerers or have been involved from a young age, you gain the following:</p>
-			<p>
-				<span class="feature">Ability Score Increase.</span>One ability score of your choice increases by 2 and another by 1.<br />
-				<span class="feature">Proficiencies.</span>You gain proficiency in martial weapons.<br />
-				<span class="feature">Trained Cursed Energy.</span>You gain a Cursed Energy feat.<br />
-			</p>
-		</description>
-		<sheet alt="Human" display="false"/>
-		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase +2 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 2" number="1" />
-			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 1" number="1" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-			<select type="Feat" name="Cursed Energy Feat (Jujutsu Sorcerer)" />
-		</rules>
-	</element>
-	<element name="Superhuman" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_SUPERHUMAN">
-		<supports>JJK Human Variant</supports>
-		<description>
-			<p>Very rarely, some humans may be astonishingly stronger than most others in the world, sometimes vastly stronger than the average human. If your human character happens to fall under this category, you can choose to replace the standard Human Ability Score Increase with these traits instead:</p>
-			<p>
-				<span class="feature">Ability Score Increase.</span>You increase either your Strength, Dexterity, or Constitution score by 2 and the others by 1.<br />
-				<span class="feature">Natural Athlete.</span>You have proficiency in the Athletics skill, if you already have proficiency, you instead gain Expertise.<br />
-				<span class="feature">Record Breaker.</span>Your jumping distance is doubled.<br />
-				<span class="feature">Uncanny Endurance.</span>You can focus on occasionally shrugging off injury. When you take damage, you can use your reaction to roll a d12. Add your Constitution modifier to the number rolled, and reduce the damage by that total. After you use this trait, you can’t use it again until you finish a short or long rest.<br />
-				<span class="feature">Powerful Build.</span>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.<br />
-				<span class="feature">Speed.</span>Your movement speed is 35 feet.<br />
-			</p>
-		</description>
-		<sheet alt="Human" display="false"/>
-		<rules>
-			<select type="Ability Score Improvement" name="Superhuman Ability Score Increase" supports="Superhuman ASI Choice" number="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Superhuman)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" number="1" />
-			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Superhuman)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" number="2"/>
-			<grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
-			<stat name="innate speed" value="35" bonus="base"/>
-			<grant type="Size" id="ID_SIZE_LARGE" />
-			<grant type="Racial Trait" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE" />
-			<grant type="Racial Trait" id="ID_JJK_FEATURE_RECORD_BREAKER" />
-		</rules>
-	</element>
-	<!-- Superhuman Ability Score Bundles -->
-	<element name="Superhuman Strength Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_STR">
-		<supports>Superhuman ASI Choice</supports>
-		<rules>
-			<stat name="strength" value="2" />
-			<stat name="dexterity" value="1" />
-			<stat name="constitution" value="1" />
-		</rules>
-	</element>
-	<element name="Superhuman Dexterity Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_DEX">
-		<supports>Superhuman ASI Choice</supports>
-		<rules>
-			<stat name="strength" value="1" />
-			<stat name="dexterity" value="2" />
-			<stat name="constitution" value="1" />
-		</rules>
-	</element>
-	<element name="Superhuman Constitution Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_CON">
-		<supports>Superhuman ASI Choice</supports>
-		<rules>
-			<stat name="strength" value="1" />
-			<stat name="dexterity" value="1" />
-			<stat name="constitution" value="2" />
-		</rules>
-	</element>
-	<element name="Uncanny Endurance" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE">
-		<description>
-			<p>When you take damage, you can use your reaction to roll a d12 and add your Constitution modifier, reducing the damage by that total. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
-		</description>
-		<sheet action="Reaction" usage="1/Short Rest">
-			<description>When you take damage roll a d12 and add {{constitution:modifier}}, reducing the damage by that total</description>
-		</sheet>
-	</element>
-	<element name="Record Breaker" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_RECORD_BREAKER">
-		<description>
-			<p>Your jumping distance is doubled.</p>
+			<p>You are undead.</p>
 		</description>
 		<sheet>
-			<description>Your jumping distance is doubled.</description>
+			<description>You are undead.</description>
 		</sheet>
+	</element>
+	<element name="Spiritual Nature" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPIRITUAL_NATURE">
+		<description>
+			<p>You function completely differently from normal creatures:</p>
+			<ul>
+				<li>You don’t need to eat, drink, breathe or sleep, but must remain inactive for 4 hours a day to gain the benefits of a long rest.</li>
+				<li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>
+				<li>You are immune to nonmagical bludgeoning, piercing, or slashing.</li>
+				<li>You are invisible to creatures without cursed energy.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You don’t need to eat, drink, breathe or sleep, but must remain inactive for 4 hours a day to gain the benefits of a long rest. You have advantage on saving throws against disease and being poisoned. You are invisible to creatures without cursed energy.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_BLUDGEONING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_PIERCING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING" />
+		</rules>
+	</element>
+	<element name="Cursed Energy Affinity" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPIRITUAL_NATURE">
+		<description>
+			<p>Due to your nature of being made of cursed energy, you are unable to utilize reverse cursed technique which is positive energy. Though you can still restore your body with pure cursed energy. Starting at 5th level, you can spend cursed energy up to your CE modifier to regain 5 hit points per cursed energy spent as an action once per turn.</p>
+		</description>
+		<sheet>
+			<description level="1">You are unable to utilize reverse cursed technique which is positive energy.</description>
+			<description level="5" action="Action">You are unable to utilize reverse cursed technique which is positive energy. You can spend cursed energy up to {{cursedenergyaffinitycemodifier}} CE to regain 5 hit points per cursed energy spent.</description>
+		</sheet>
+		<rules>
+			<stat name="cursedenergyaffinitycemodifier" value="charisma:modifier" bonus="base" />
+			<stat name="cursedenergyaffinitycemodifier" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<!-- Cursed Spirit Variants -->
+	<element name="Vengeful" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_VENGEFUL">
+		<supports>JJK Cursed Spirit Variant</supports>
+		<description>
+			<p>You were once human, but when you died your powerful grudge made you into a curse.</p>
+			<p>
+				<span class="feature">Grudge.</span>When reduced to 0 hit points, you can choose to remain at 1 hit point. You can use this feature once per long rest.<br />
+				<span class="feature">Curse.</span>When you choose this subrace, choose a race that you hated. You gain a +2 bonus to damage rolls against that race.<br />
+			</p>
+		</description>
+		<sheet alt="Cursed Spirit" display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_GRUDGE" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_CURSE" />
+		</rules>
+	</element>
+	<element name="Grudge" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_GRUDGE">
+		<description>
+			<p>When reduced to 0 hit points, you can choose to remain at 1 hit point. You can use this feature once per long rest.</p>
+		</description>
+		<sheet>
+			<description usage="1/Long Rest">When reduced to 0 hit points, you can choose to remain at 1 hit point.</description>
+		</sheet>
+	</element>
+	<element name="Curse" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_CURSE">
+		<description>
+			<p>When you choose this subrace, choose a race that you hated. You gain a +2 bonus to damage rolls against that race.</p>
+		</description>
+		<sheet>
+			<description>Choose a race that you hated. You gain a +2 bonus to damage rolls against that race.</description>
+		</sheet>
+	</element>
+	<element name="Imaginary" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_IMAGINARY">
+		<supports>JJK Cursed Spirit Variant</supports>
+		<description>
+			<p>You are made up of humanity’s fears, formed from a shared negative image.</p>
+			<p>
+				<span class="feature">Frightful Presence.</span>As an action, you can force all creatures within 30 feet of you to make a Wisdom saving throw against your Cursed Energy save DC. On a failure, they are frightened of you for 1 minute. A creature can repeat the save at the end of their turn. Once you use this feature, you cannot use it again until you finish a long rest.<br />
+				<span class="feature">Fearmonger.</span>You gain proficiency in Intimidation and have a +1 bonus to attack and damage rolls against a frightened creature.<br />
+			</p>
+		</description>
+		<sheet alt="Cursed Spirit" display="false"/>
+		<rules>
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_FRIGHTFUL_PRESENCE" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_FEARMONGER" />
+		</rules>
+	</element>
+	<element name="Frightful Presence" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_FRIGHTFUL_PRESENCE">
+		<description>
+			<p>As an action, you can force all creatures within 30 feet of you to make a Wisdom saving throw against your Cursed Energy save DC. On a failure, they are frightened of you for 1 minute. A creature can repeat the save at the end of their turn. Once you use this feature, you cannot use it again until you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest">
+			<description>You can force all creatures within 30 feet of you to make a Wisdom saving throw DC{{ce:dc}}. On a failure, they are frightened of you for 1 minute. A creature can repeat the save at the end of their turn.</description>
+		</sheet>
+	</element>
+	<element name="Fearmonger" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_FEARMONGER">
+		<description>
+			<p>You gain proficiency in Intimidation and have a +1 bonus to attack and damage rolls against a frightened creature.</p>
+		</description>
+		<sheet>
+			<description>You have a +1 bonus to attack and damage rolls against a frightened creature.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Skill, Fearmonger" number="1" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
 	</element>
 </elements>
