@@ -50,19 +50,19 @@
 			<description>You have advantage on saving throws against effects that would alter or change your form.</description>
 		</sheet>
 	</element>
-	<element name="25 ft." type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPEED25">
+	<element name="25 ft" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPEED25">
 		<supports>JJK Speed</supports>
 		<rules>
 			<stat name="innate speed" value="25" bonus="base"/>
 		</rules>
 	</element>
-	<element name="30 ft." type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPEED30">
+	<element name="30 ft" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPEED30">
 		<supports>JJK Speed</supports>
 		<rules>
 			<stat name="innate speed" value="30" bonus="base"/>
 		</rules>
 	</element>
-	<element name="35 ft." type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPEED35">
+	<element name="35 ft" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPEED35">
 		<supports>JJK Speed</supports>
 		<rules>
 			<stat name="innate speed" value="35" bonus="base"/>
