@@ -4,7 +4,7 @@
 		<name>Cursed Corpse</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.1">
+		<update version="5.2">
 			<file name="race-cursedcorpse.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedcorpse.xml" />
 		</update>
 	</info>
