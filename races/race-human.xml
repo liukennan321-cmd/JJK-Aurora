@@ -90,6 +90,9 @@
 			<grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
 			<stat name="innate speed" value="35" bonus="base"/>
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_RECORD_BREAKER" />
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_POWERFUL_BUILD" />
+
 		</rules>
 	</element>
 	<!-- Superhuman Ability Score Bundles -->
@@ -124,5 +127,21 @@
 	<sheet action="Reaction" usage="1/Short Rest">
 		<description>When you take damage roll a d12 and add {{constitution:modifier}}, reducing the damage by that total</description>
 	</sheet>
-</element>
+	</element>
+	<element name="Record Breaker" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_RECORD_BREAKER">
+	<description>
+		<p>Your jumping distance is doubled.</p>
+	</description>
+	<sheet>
+		<description>Your jumping distance is doubled.</description>
+	</sheet>
+	</element>
+	<element name="Powerful Build" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_POWERFUL_BUILD">
+	<description>
+		<p>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</p>
+	</description>
+	<sheet>
+		<description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+	</sheet>
+	</element>
 </elements>
