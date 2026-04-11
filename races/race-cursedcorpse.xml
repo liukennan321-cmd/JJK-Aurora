@@ -4,7 +4,7 @@
 		<name>Cursed Corpse</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.38">
+		<update version="5.39">
 			<file name="race-cursedcorpse.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedcorpse.xml" />
 		</update>
 	</info>
@@ -105,21 +105,21 @@
 		</rules>
 	</element>
 	<element name="Intimidation" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_TAILORED_APPEARANCE_INTIMIDATION">
-		<supports>ExpertiseCursed Corpse</supports>
+		<supports>ExpertiseCursedCorpse</supports>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
 			<stat name="intimidation:proficiency" value="proficiency" bonus="double"/>
 		</rules>
 	</element>
 	<element name="Persuasion" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_TAILORED_APPEARANCE_PERSUASION">
-		<supports>ExpertiseCursed Corpse</supports>
+		<supports>ExpertiseCursedCorpse</supports>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
 			<stat name="persuasion:proficiency" value="proficiency" bonus="double"/>
 		</rules>
 	</element>
 	<element name="Performance" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_TAILORED_APPEARANCE_PERFORMANCE">
-		<supports>ExpertiseCursed Corpse</supports>
+		<supports>ExpertiseCursedCorpse</supports>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE"/>
 			<stat name="performance:proficiency" value="proficiency" bonus="double"/>
