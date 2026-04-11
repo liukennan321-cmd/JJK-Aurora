@@ -4,7 +4,7 @@
 		<name>Cursed Spirit</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="race-cursedspirit.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedspirit.xml" />
 		</update>
 	</info>
@@ -72,7 +72,7 @@
 			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_SLASHING" />
 		</rules>
 	</element>
-	<element name="Cursed Energy Affinity" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_SPIRITUAL_NATURE">
+	<element name="Cursed Energy Affinity" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_CURSED_ENERGY_AFFINITY">
 		<description>
 			<p>Due to your nature of being made of cursed energy, you are unable to utilize reverse cursed technique which is positive energy. Though you can still restore your body with pure cursed energy. Starting at 5th level, you can spend cursed energy up to your CE modifier to regain 5 hit points per cursed energy spent as an action once per turn.</p>
 		</description>
