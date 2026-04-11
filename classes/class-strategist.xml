@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Strategist</name>
+		<description>The Strategist class from JJK.</description>
+		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0">JJK</author>
+		<update version="5.0">
+			<file name="class-strategist.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/classes/class-strategist.xml" />
+		</update>
+	</info>
+
+	<element name="Strategist" type="Class" source="JJK" id="ID_JJK_CLASS_STRATEGIST">
+		<description>
+			<p>You enhance techniques.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a strategist, you gain the following class features.</p>
+            <h5 class="caption">HIT POINTS</h5>
+            <ul class="unstyled">
+                <li><strong>Hit Dice:</strong> 1d6 per strategist level</li>
+                <li><strong>Hit Points at 1st Level:</strong> 6 + your Constitution modifier</li>
+                <li><strong>Hit Points at Higher Levels:</strong> 1d6 (or 4) + your Constitution modifier per strategist level after 1st</li>
+            </ul>
+            <h5 class="caption">PROFICIENCIES</h5>
+            <ul class="unstyled mb">
+                <li><strong>Armor:</strong> None</li>
+                <li><strong>Weapons:</strong> Daggers, darts, slings, quarterstaffs, and handguns</li>
+                <li><strong>Tools:</strong> None</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+                <li><strong>Skills:</strong> Choose two from Arcana, History, Insight, Investigation, Medicine, and Religion</li>
+            </ul>
+			<h5 class="caption">EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>(a) a handgun or (b) a dagger</li>
+				<li>(a) a component pouch or (b) an arcane focus</li>
+				<li>(a) a scholar's pack or (b) an explorer's pack</li>
+				<li>A technique manual</li>
+			</ul>
+			<h5 class="caption">THE STRATEGIST</h5>
+			<table class="class-features">
+				<thead>
+					<tr><td class="col-10">Level</td><td class="col-10">Cursed Energy Points</td><td class="col-60 left">Features</td></tr>
+				</thead>
+				<tr><td>1st</td><td>2 + CE modifier</td><td class="left">Cursed Energy, Innate Technique, Quick Recovery</td></tr>
+				<tr><td>2nd</td><td>4 + CE modifier</td><td class="left">Technique Creativity</td></tr>
+				<tr><td>3rd</td><td>6 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>4th</td><td>8 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>5th</td><td>10 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>6th</td><td>12 + CE modifier</td><td class="left">Innate Technique Feature, Ability Score Improvement</td></tr>
+				<tr><td>7th</td><td>14 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>8th</td><td>16 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>9th</td><td>18 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>10th</td><td>20 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>11th</td><td>22 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>12th</td><td>24 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>13th</td><td>26 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>14th</td><td>28 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>15th</td><td>30 + CE modifier</td><td class="left">Sorcerous Restoration</td></tr>
+				<tr><td>16th</td><td>32 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>17th</td><td>34 + CE modifier</td><td class="left"></td></tr>
+				<tr><td>18th</td><td>36 + CE modifier</td><td class="left">Innate Technique Feature</td></tr>
+				<tr><td>19th</td><td>38 + CE modifier</td><td class="left">Ability Score Improvement</td></tr>
+				<tr><td>20th</td><td>40 + CE modifier</td><td class="left">Signature Move</td></tr>
+			</table>	
+			<div element="ID_JJK_CLASS_FEATURE_STRATEGIST_CURSED_ENERGY" />
+			<div element="ID_JJK_CLASS_FEATURE_STRATEGIST_INNATE_TECHNIQUE" />
+			<div element="ID_JJK_CLASS_FEATURE_STRATEGIST_QUICK_RECOVERY" />
+			<div element="ID_JJK_CLASS_FEATURE_STRATEGIST_TECHNIQUE_CREATIVITY" />
+			<div element="ID_JJK_CLASS_FEATURE_STRATEGIST_ABILITYSCOREIMPROVEMENT_STRATEGIST" />
+			<div element="ID_JJK_CLASS_FEATURE_STRATEGIST_SORCEROUS_RESTORATION" />
+			<div element="ID_JJK_CLASS_FEATURE_STRATEGIST_SIGNATURE_MOVE" />
+		</description>
+		<sheet display="false">
+			<description>Your cursed energy manipulation is second to Satoru Gojo</description>
+		</sheet>
+		<setters>
+			<set name="short">Your cursed energy manipulation is second to Satoru Gojo</set>
+			<set name="hd">d6</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_JJK_MULTICLASS_STRATEGIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" requirements="!ID_JJK_MULTICLASS_STRATEGIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" requirements="!ID_JJK_MULTICLASS_STRATEGIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_JJK_MULTICLASS_STRATEGIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_JJK_MULTICLASS_STRATEGIST" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_JJK_MULTICLASS_STRATEGIST" />
+			<select type="Proficiency" name="Skill Proficiency (Strategist)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_JJK_MULTICLASS_STRATEGIST" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_STRATEGIST_CURSED_ENERGY" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_STRATEGIST_INNATE_TECHNIQUE" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_STRATEGIST_QUICK_RECOVERY" level="1" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_STRATEGIST_TECHNIQUE_CREATIVITY" level="2" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_STRATEGIST_ABILITYSCOREIMPROVEMENT_STRATEGIST" level="4" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_STRATEGIST_SORCEROUS_RESTORATION" level="15" />
+			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_STRATEGIST_SIGNATURE_MOVE" level="20" />
+		</rules>
+		<multiclass id="ID_JJK_MULTICLASS_STRATEGIST">
+			<prerequisite>Intelligence 13</prerequisite>
+			<requirements>([int:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Arcana, daggers, darts, slings, quarterstaffs, and handguns</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+	  		<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+	  		<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+	  		<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA"/>
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Cursed Energy" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_CURSED_ENERGY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_CURSED_ENERGY</requirements>
+		<description>
+			<p>Starting at 1st level, you can harness your negative feelings into a usable source of energy, called cursed energy. These feelings can be harnessed into attacks or abilities. The number of cursed energy you possess is your class level + your cursed energy modifier which is charisma or wisdom (Player’s choice). You have a curse stat equal to the chosen stat</p>
+			<p class="indent"> Your cursed energy DC is 8 + user cursed energy ability modifier + proficiency bonus.</p>
+		</description>
+		<sheet>
+			<description>You have {{ce:points}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}. Your curse stat is {{cu:stat}}</description>
+		</sheet>
+		<rules>
+			<stat name="ce:points" value="level:strategist" />
+  		<stat name="ce:points" value="level:strategist" />
+			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
+			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
+			<stat name="ce:points" value="ce:modifier" />
+			<stat name="ce:dc" value="8" />
+			<stat name="ce:dc" value="proficiency" />
+			<stat name="ce:dc" value="ce:modifier" />
+			<stat name="cu:stat" value="charisma:score" bonus="cursed energy"/>			
+			<stat name="cu:stat" value="wisdom:score" bonus="cursed energy" />
+		</rules>
+	</element>
+	<element name="Innate Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_INNATE_TECHNIQUE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_INNATE_TECHNIQUE</requirements>
+		<description>
+			<p>Starting at 1st level, you were born with an Innate Technique. Innate Techniques are unique abilities congenitally engraved into the user's body, specifically in the right prefrontal cortex of the brain. Most jujutsu sorcerers are born with an innate technique that manifests around the age of five or six, which continually carves its formula into the user over time. You must choose one Innate Technique, all detailed under Innate Techniques. Your choice grants you features at 1st, and again at 3rd, 6th, 11th, and 18th levels.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Innate Technique" supports="Innate Technique" />
+		</rules>
+	</element>
+	<element name="Quick Recovery" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_QUICK_RECOVERY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_QUICK_RECOVERY</requirements>
+		<description>
+			<p>You have a pool of latent cursed energy that replenishes when you take a long rest. The pool equals half your level (rounded up) and you can draw from it at will.</p>
+		  <p class="indent">For example, if you're a 4th-level strategist, you have a pool of 2 cursed energy points. You can recover either 1 at two different times or 2 at once.</p>
+		</description>
+		<sheet>
+			<description>You have {{latent:ce:points}} latent ce.</description>
+		</sheet>
+		<rules>
+			<stat name="latent:ce:points" value="level:strategist:half:up" />
+		</rules>
+	</element>
+	<element name="Technique Creativity" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_TECHNIQUE_CREATIVITY">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_TECHNIQUE_CREATIVITY</requirements>
+		<description>
+			<p> At 2nd level, you gain the ability to twist cursed techniques to suit your needs. You gain two of the following Modification options of your choice. You gain another one at 10th and 17th levels.</p>
+			<p class="indent">You can use only one Modification option on a technique when you cast it unless otherwise noted.</p>
+		</description>
+		<sheet>
+			<description>You can use only one Modification option on a technique when you cast it unless otherwise noted.</description>
+		</sheet>
+		<rules>
+		  <select type="Class Feature" name="Modification" supports="TC Modification" level="3" number="2"/>
+			<select type="Class Feature" name="Modification" supports="TC Modification" level="10"/>
+			<select type="Class Feature" name="Modification" supports="TC Modification" level="17"/>
+		</rules>
+	</element>
+  <!-- Metamagic Options -->
+	<element name="Careful Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_CAREFUL_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>When you use a technique that forces other creatures to make a saving throw, you can protect some of those creatures from the technique's full force. To do so, you spend 1 cursed energy and choose a number of those creatures up to your Cursed Energy modifier (minimum of one). A chosen creature automatically succeeds on its saving throw against the technique.</p>
+		</description>
+		<sheet>
+			<description>When you use a technique that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 cursed energy and choose up to {{modification careful technique:creatures}} of those creatures. A chosen creature automatically succeeds on its saving throw against the technique.</description>
+		</sheet>
+		<rules>
+			<stat name="modification careful technique:creatures" value="1" bonus="base" />
+			<stat name="modification careful technique:creatures" value="charisma:modifier" bonus="base" />
+			<stat name="modification careful technique:creatures" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Distant Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_DISTANT_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>When you use a technique that has a range of 5 feet or greater, you can spend 1 cursed energy to double the range of the technique. When you use a technique that has a range of touch, you can spend 1 cursed energy to make the range of the technique 30 feet.</p>
+		</description>
+		<sheet>
+			<description>When you use a technique that has a range of 5 feet or greater, you can spend 1 cursed energy to double the range of the technique. When you use a technique that has a range of touch, you can spend 1 cursed energy to make the range of the technique 30 feet.</description>
+		</sheet>
+	</element>
+	<element name="Empowered Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_EMPOWERED_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>When you roll damage for a technique, you can spend 1 cursed energy to reroll a number of the damage dice up to your Cursed Energy modifier (minimum of one). You must use the new rolls.</p>
+			<p class="indent">You can use Empowered Technique even if you have already used a different Modification option during the casting of the technique.</p>
+		</description>
+		<sheet>
+			<description>When you roll damage for a technique, you can spend 1 cursed energy to reroll {{modification empowered technique:rerolls}} damage dice. You must use the new rolls. You can use Empowered Technique even if you have already used a different Modification option during the casting of the technique.</description>
+		</sheet>
+		<rules>
+			<stat name="modification empowered technique:rerolls" value="1" bonus="base" />
+			<stat name="modification empowered technique:rerolls" value="charisma:modifier" bonus="base" />
+			<stat name="modification empowered technique:rerolls" value="wisdom:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Extended Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_EXTENDED_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>When you use a technique that has a duration of 1 minute or longer, you can spend 1 cursed energy to double its duration, to a maximum duration of 24 hours.</p>
+		</description>
+		<sheet>
+			<description>When you use a technique that has a duration of 1 minute or longer, you can spend 1 cursed energy to double its duration, to a maximum duration of 24 hours.</description>
+		</sheet>
+	</element>
+	<element name="Heightened Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_HEIGHTENED_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 cursed energys to give one target of the technique disadvantage on its first saving throw made against the technique.</p>
+		</description>
+		<sheet>
+			<description>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 cursed energys to give one target of the technique disadvantage on its first saving throw made against the technique.</description>
+		</sheet>
+	</element>
+	<element name="Quickened Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_QUICKENED_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>When you use a technique that has a casting time of 1 action, you can spend 2 cursed energy to change the casting time to 1 bonus action for this casting.</p>
+		</description>
+		<sheet>
+			<description>When you use a technique that has a casting time of 1 action, you can spend 2 cursed energy to change the casting time to 1 bonus action for this casting.</description>
+		</sheet>
+	</element>
+  <element name="Seeking Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_SEEKING_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>If you make an attack roll for a technique and miss, you can spend 2 cursed energy to reroll the d20, and you must use the new roll.</p>
+      <p class="indent">You can use Seeking Technique even if you have already used a different Modification option during the casting of the technique.</p>
+		</description>
+		<sheet>
+			<description>If you make an attack roll for a technique and miss, you can spend 2 cursed energy to reroll the d20, and you must use the new roll. You can use Seeking Technique even if you have already used a different Modification option during the casting of the technique.</description>
+		</sheet>
+	</element>
+	<element name="Subtle Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_SUBTLE_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>When you use a technique, you can spend 1 cursed energy to cast it without any somatic or verbal components.</p>
+		</description>
+		<sheet>
+			<description>When you use a technique, you can spend 1 cursed energy to cast it without any somatic or verbal components.</description>
+		</sheet>
+	</element>
+  <element name="Transmutated Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_TRANSMUTATED_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>When you use a technique that deals a type of damage from the following list, you can spend 1 cursed energy to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, or thunder.</p>
+		</description>
+		<sheet>
+			<description>When you use a technique that deals a type of damage from the following list, you can spend 1 cursed energy to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, or thunder.</description>
+		</sheet>
+	</element>
+	<element name="Twinned Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_MODIFICATION_TWINNED_TECHNIQUE">
+		<supports>TC Modification</supports>
+		<description>
+			<p>When you use a technique that targets only one creature and doesn’t have a range of self, you can spend a number of cursed energy equal to the technique’s cost to target a second creature in range with the same technique (1 cursed energy if the technique is free). To be eligible, a technique must be incapable of targeting more than one creature at the technique’s current level.</p>
+		</description>
+		<sheet>
+			<description>When you use a technique that targets only one creature and doesn’t have a range of self, you can spend a number of cursed energy equal to the technique’s cost to target a second creature in range with the same technique (1 cursed energy if the technique is free).</description>
+		</sheet>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_ABILITYSCOREIMPROVEMENT_STRATEGIST">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_ABILITYSCOREIMPROVEMENT_STRATEGIST</requirements>
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 6th, 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Strategist 4)" supports="Improvement Option,Strategist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Strategist 6)" supports="Improvement Option,Strategist,6" level="6" />
+			<select type="Class Feature" name="Improvement Option (Strategist 8)" supports="Improvement Option,Strategist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Strategist 10)" supports="Improvement Option,Strategist,10" level="10" />
+			<select type="Class Feature" name="Improvement Option (Strategist 12)" supports="Improvement Option,Strategist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Strategist 16)" supports="Improvement Option,Strategist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Strategist 19)" supports="Improvement Option,Strategist,19" level="19" />
+		</rules>
+	</element>
+	<element name="Sorcerous Restoration" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_SORCEROUS_RESTORATION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_SORCEROUS_RESTORATION</requirements>
+		<description>
+			<p>At 15th level, you regain 4 cursed energy on a short rest.</p>
+		</description>
+		<sheet>
+			<description>You regain 4 cursed energy on a short rest.</description>
+		</sheet>
+	</element>
+	<element name="Signature Move" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_STRATEGIST_SIGNATURE_MOVE">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_SIGNATURE_MOVE</requirements>
+		<description>
+			<p>At 20th level, you can choose a feature that uses cursed energy, that is not a domain expansion, maximum, or reverse curse technique, and makes it have no cursed energy cost. It counts as the minimum input of Cursed Energy necessary.</p>
+		</description>
+		<sheet>
+			<description>You can choose a feature that uses cursed energy, that is not a domain expansion, maximum, or reverse curse technique, and makes it have no cursed energy cost. It counts as the minimum input of Cursed Energy necessary.</description>
+		</sheet>
+	</element>
+
+	<!--Feature Replacement Grants-->
+	<element name="Cursed Energy Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_CURSED_ENERGY" />
+	<element name="Innate Technique Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_INNATE_TECHNIQUE" />
+	<element name="Quick Recovery Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_QUICK_RECOVERY" />
+	<element name="Technique Creativity Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_TECHNIQUE_CREATIVITY" />
+	<element name="Ability Score Improvement Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_ABILITYSCOREIMPROVEMENT_STRATEGIST" />
+	<element name="Sorcerous Restoration Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_SORCEROUS_RESTORATION" />
+	<element name="Signature Move Feature Replacement" type="Grants" source="Internal" id="ID_INTERNAL_FEATURE_REPLACEMENT_STRATEGIST_SIGNATURE_MOVE" />
+</elements>
