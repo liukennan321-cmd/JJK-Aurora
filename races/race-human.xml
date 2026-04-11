@@ -4,7 +4,7 @@
 		<name>Human</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.3">
+		<update version="5.4">
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-human.xml" />
 		</update>
 	</info>
@@ -120,19 +120,19 @@
 		</rules>
 	</element>
 	<element name="Uncanny Endurance" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE">
-	<description>
-		<p>When you take damage, you can use your reaction to roll a d12 and add your Constitution modifier, reducing the damage by that total. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
-	</description>
-	<sheet action="Reaction" usage="1/Short Rest">
-		<description>When you take damage roll a d12 and add {{constitution:modifier}}, reducing the damage by that total</description>
-	</sheet>
+		<description>
+			<p>When you take damage, you can use your reaction to roll a d12 and add your Constitution modifier, reducing the damage by that total. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When you take damage roll a d12 and add {{constitution:modifier}}, reducing the damage by that total</description>
+		</sheet>
 	</element>
 	<element name="Record Breaker" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_RECORD_BREAKER">
-	<description>
-		<p>Your jumping distance is doubled.</p>
-	</description>
-	<sheet>
-		<description>Your jumping distance is doubled.</description>
-	</sheet>
+		<description>
+			<p>Your jumping distance is doubled.</p>
+		</description>
+		<sheet>
+			<description>Your jumping distance is doubled.</description>
+		</sheet>
 	</element>
 </elements>
