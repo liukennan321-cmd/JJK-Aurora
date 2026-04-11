@@ -4,7 +4,7 @@
 		<name>Human</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.0">
+		<update version="5.1">
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-human.xml" />
 		</update>
 	</info>
@@ -32,7 +32,6 @@
 			<set name="weight" modifier="2d4">110 lb.</set>
 		</setters>
 		<rules>
-			<!-- ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI -->
 			<stat name="strength" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
 			<stat name="dexterity" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
 			<stat name="constitution" value="1" requirements="!(ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER||ID_RACE_VARIANT_JJK_SUPERHUMAN||ID_INTERNAL_GRANTS_DRAGONMARK||ID_WOTC_WGTE_GRANTS_DARKMARKED)" />
@@ -48,7 +47,8 @@
 			<select type="Race Variant" name="JJK Human Variant" supports="JJK Human Variant" optional="true" />
 		</rules>
 	</element>
-	
+	<!-- ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI -->
+
 	<!-- Human Variants -->
 	<element name="Jujutsu Sorcerer" type="Race Variant" source="JJK" id="ID_RACE_VARIANT_JJK_JUJUTSU_SORCERER">
 		<supports>JJK Human Variant</supports>
@@ -84,10 +84,40 @@
 		</description>
 		<sheet alt="Human" display="false"/>
 		<rules>
-			<select type="Ability Score Improvement" name="Ability Score Increase +2 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 2" number="1" />
-			<select type="Ability Score Improvement" name="Ability Score Increase +1 (Jujutsu Sorcerer)" supports="Custom Ability Score Increase 1" number="1" />
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
-			<select type="Feat" name="Cursed Energy Feat (Jujutsu Sorcerer)" />
+			<select type="Ability Score Improvement" name="Superhuman Ability Score Increase" supports="Superhuman ASI Choice" number="1" />
+			<grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
+			<stat name="innate speed" value="35" bonus="base"/>
+			<grant type="Racial Trait" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE" />
 		</rules>
 	</element>
+	<!-- Superhuman Ability Score Bundles -->
+	<element name="Superhuman Strength Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_STR">
+		<supports>Superhuman ASI Choice</supports>
+		<rules>
+			<stat name="strength" value="2" />
+			<stat name="dexterity" value="1" />
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+	<element name="Superhuman Dexterity Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_DEX">
+		<supports>Superhuman ASI Choice</supports>
+		<rules>
+			<stat name="strength" value="1" />
+			<stat name="dexterity" value="2" />
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+	<element name="Superhuman Constitution Focus" type="Ability Score Improvement" source="JJK" id="ID_ASI_JJK_SUPERHUMAN_CON">
+		<supports>Superhuman ASI Choice</supports>
+		<rules>
+			<stat name="strength" value="1" />
+			<stat name="dexterity" value="1" />
+			<stat name="constitution" value="2" />
+		</rules>
+	</element>
+	<element name="Uncanny Endurance" type="Racial Trait" source="JJK" id="ID_JJK_FEATURE_UNCANNY_ENDURANCE">
+	<description>
+		<p>When you take damage, you can use your reaction to roll a d12 and add your Constitution modifier, reducing the damage by that total. Once you use this trait, you can’t use it again until you finish a short or long rest.</p>
+	</description>
+</element>
 </elements>
