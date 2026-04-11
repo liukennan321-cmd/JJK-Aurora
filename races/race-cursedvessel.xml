@@ -4,7 +4,7 @@
 		<name>Cursed Vessel</name>
 		<description></description>
 		<author url="https://docs.google.com/document/d/1rxBzDsWgUR3gqeDADvCE5Zo1obYoBnwdNZXxmQdheP0/edit?tab=t.0#heading=h.ctlbc6irsjfj">JJK</author>
-		<update version="5.2">
+		<update version="5.3">
 			<file name="race-cursedvessel.xml" url="https://raw.githubusercontent.com/VortexTechK/JJK-Aurora/refs/heads/main/races/race-cursedvessel.xml" />
 		</update>
 	</info>
@@ -141,7 +141,6 @@
 			<stat name="durablebody:hp" value="level" />
 			<stat name="durablebody:hp" value="level" />
 			<stat name="hp" value="durablebody:hp" />
-			<grant type="Proficiency" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
 			<grant type="Racial Trait" id="ID_JJK_FEATURE_POISONOUS_BLOOD" />
 		</rules>
 	</element>
