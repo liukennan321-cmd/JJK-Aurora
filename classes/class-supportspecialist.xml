@@ -153,129 +153,72 @@
 			<p>“Emerge from the darkness, blacker than darkness. Purify that which is impure.” As an action for 5 Cursed Energy, you cover the area around you within a 2165-foot radius with a black dome for 10 minutes. Upon activation, a dark, almost liquid-like matter drips down from the sky to form the outer barrier wall in the shape of a half-sphere. The curtain changes the sky into night, provoking cursed spirits out of hiding. For each 1 extra Cursed Energy you spend, you add +1 minute to the curtain's duration. Those without cursed energy, or magic cannot see anything inside the barrier, merely seeing as if nothing but the vegetation was there. Creatures who can see into the ethereal plane or have levels in a sorcerer class can see the black half-sphere.</p>
 		 	<p class="indent">Your curtain has a number of hit points equal to your Cursed Energy modifier times your level. At 7th level, your curtains have health equal to your cursed energy modifier times 25, and at 13th level, it is 50 times your cursed energy modifier.</p>
 		</description>
-		<sheet>
-			<description level="1" action="Action">For 5 Cursed Energy, you cover the area around you within a 2165-foot radius with a black dome for 10 minutes. The curtain changes the sky into night, provoking cursed spirits out of hiding. For each 1 extra Cursed Energy you spend, you add +1 minute to the curtain's duration. Those without cursed energy, or magic cannot see anything inside the barrier, merely seeing as if nothing but the vegetation was there. Creatures who can see into the ethereal plane or have levels in a sorcerer class can see the black half-sphere. Your curtain has {{}} hit points equal to your Cursed Energy modifier times your level.</description>
+		<sheet usage="Action">
+			<description>For 5 Cursed Energy, you cover the area around you within a 2165-foot radius with a black dome for 10 minutes. The curtain changes the sky into night, provoking cursed spirits out of hiding. For each 1 extra Cursed Energy you spend, you add +1 minute to the curtain's duration. Those without cursed energy, or magic cannot see anything inside the barrier, merely seeing as if nothing but the vegetation was there. Creatures who can see into the ethereal plane or have levels in a sorcerer class can see the black half-sphere. Your curtain has {{curtain:hp}} hit points.</description>
 		</sheet>
 		<rules>
-			<stat name="latent:ce:points" value="level:strategist:half:up" />
+			<stat name="curtain:hp" value="ce:modifier" level="1"/>
+			<stat name="curtain:hp" value="ce:modifier" level="2"/>
+			<stat name="curtain:hp" value="ce:modifier" level="3"/>
+			<stat name="curtain:hp" value="ce:modifier" level="4"/>
+			<stat name="curtain:hp" value="ce:modifier" level="5"/>
+			<stat name="curtain:hp" value="ce:modifier" level="6"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="7"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
+			<stat name="curtain:hp" value="ce:modifier" level="13"/>
 		</rules>
 	</element>
-	<element name="Technique Creativity" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_BARRIER_TECHNIQUES">
+	<element name="Barrier Techniques" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_BARRIER_TECHNIQUES">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_BARRIER_TECHNIQUES</requirements>
 		<description>
-			<p> At 2nd level, you gain the ability to twist cursed techniques to suit your needs. You gain two of the following Modification options of your choice. You gain another one at 10th and 17th levels.</p>
-			<p class="indent">You can use only one Modification option on a technique when you cast it unless otherwise noted.</p>
+			<p>At 2nd level, you have learned how to create basic barriers to protect areas or trap opponents and protect allies. As an action for up to your Cursed Energy modifier in cursed energy, you make a dome starting from yourself with a 5-foot radius and a 10-foot height. For each cursed energy spent, the barrier can increase its width by 10 feet and its height by 10 feet. This barrier has 10 hit points per cursed energy spent and is immune to Poison and Psychic damage. This barrier lasts a number of minutes equal to your Cursed Energy modifier. At 9th level, your barriers have health equal to 20 times the cursed energy spent, and at 15th level it is resistant to damage from the outside.</p>
 		</description>
-		<sheet>
-			<description>You can use only one Modification option on a technique when you cast it unless otherwise noted.</description>
-		</sheet>
-		<rules>
-		  <select type="Class Feature" name="Modification" supports="TC Modification" level="3" number="2"/>
-			<select type="Class Feature" name="Modification" supports="TC Modification" level="10"/>
-			<select type="Class Feature" name="Modification" supports="TC Modification" level="17"/>
-		</rules>
-	</element>
-  <!-- Metamagic Options -->
-	<element name="Careful Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_CAREFUL_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>When you use a technique that forces other creatures to make a saving throw, you can protect some of those creatures from the technique's full force. To do so, you spend 1 cursed energy and choose a number of those creatures up to your Cursed Energy modifier (minimum of one). A chosen creature automatically succeeds on its saving throw against the technique.</p>
-		</description>
-		<sheet>
-			<description>When you use a technique that forces other creatures to make a saving throw, you can protect some of those creatures from the spell’s full force. To do so, you spend 1 cursed energy and choose up to {{modification careful technique:creatures}} of those creatures. A chosen creature automatically succeeds on its saving throw against the technique.</description>
-		</sheet>
-		<rules>
-			<stat name="modification careful technique:creatures" value="1" bonus="base" />
-			<stat name="modification careful technique:creatures" value="charisma:modifier" bonus="base" />
-			<stat name="modification careful technique:creatures" value="wisdom:modifier" bonus="base" />
-		</rules>
-	</element>
-	<element name="Distant Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_DISTANT_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>When you use a technique that has a range of 5 feet or greater, you can spend 1 cursed energy to double the range of the technique. When you use a technique that has a range of touch, you can spend 1 cursed energy to make the range of the technique 30 feet.</p>
-		</description>
-		<sheet>
-			<description>When you use a technique that has a range of 5 feet or greater, you can spend 1 cursed energy to double the range of the technique. When you use a technique that has a range of touch, you can spend 1 cursed energy to make the range of the technique 30 feet.</description>
-		</sheet>
-	</element>
-	<element name="Empowered Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_EMPOWERED_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>When you roll damage for a technique, you can spend 1 cursed energy to reroll a number of the damage dice up to your Cursed Energy modifier (minimum of one). You must use the new rolls.</p>
-			<p class="indent">You can use Empowered Technique even if you have already used a different Modification option during the casting of the technique.</p>
-		</description>
-		<sheet>
-			<description>When you roll damage for a technique, you can spend 1 cursed energy to reroll {{modification empowered technique:rerolls}} damage dice. You must use the new rolls. You can use Empowered Technique even if you have already used a different Modification option during the casting of the technique.</description>
-		</sheet>
-		<rules>
-			<stat name="modification empowered technique:rerolls" value="1" bonus="base" />
-			<stat name="modification empowered technique:rerolls" value="charisma:modifier" bonus="base" />
-			<stat name="modification empowered technique:rerolls" value="wisdom:modifier" bonus="base" />
-		</rules>
-	</element>
-	<element name="Extended Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_EXTENDED_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>When you use a technique that has a duration of 1 minute or longer, you can spend 1 cursed energy to double its duration, to a maximum duration of 24 hours.</p>
-		</description>
-		<sheet>
-			<description>When you use a technique that has a duration of 1 minute or longer, you can spend 1 cursed energy to double its duration, to a maximum duration of 24 hours.</description>
-		</sheet>
-	</element>
-	<element name="Heightened Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_HEIGHTENED_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 cursed energys to give one target of the technique disadvantage on its first saving throw made against the technique.</p>
-		</description>
-		<sheet>
-			<description>When you use a technique that forces a creature to make a saving throw to resist its effects, you can spend 3 cursed energys to give one target of the technique disadvantage on its first saving throw made against the technique.</description>
-		</sheet>
-	</element>
-	<element name="Quickened Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_QUICKENED_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>When you use a technique that has a casting time of 1 action, you can spend 2 cursed energy to change the casting time to 1 bonus action for this casting.</p>
-		</description>
-		<sheet>
-			<description>When you use a technique that has a casting time of 1 action, you can spend 2 cursed energy to change the casting time to 1 bonus action for this casting.</description>
-		</sheet>
-	</element>
-  <element name="Seeking Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_SEEKING_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>If you make an attack roll for a technique and miss, you can spend 2 cursed energy to reroll the d20, and you must use the new roll.</p>
-      <p class="indent">You can use Seeking Technique even if you have already used a different Modification option during the casting of the technique.</p>
-		</description>
-		<sheet>
-			<description>If you make an attack roll for a technique and miss, you can spend 2 cursed energy to reroll the d20, and you must use the new roll. You can use Seeking Technique even if you have already used a different Modification option during the casting of the technique.</description>
-		</sheet>
-	</element>
-	<element name="Subtle Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_SUBTLE_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>When you use a technique, you can spend 1 cursed energy to cast it without any somatic or verbal components.</p>
-		</description>
-		<sheet>
-			<description>When you use a technique, you can spend 1 cursed energy to cast it without any somatic or verbal components.</description>
-		</sheet>
-	</element>
-  <element name="Transmutated Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_TRANSMUTATED_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>When you use a technique that deals a type of damage from the following list, you can spend 1 cursed energy to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, or thunder.</p>
-		</description>
-		<sheet>
-			<description>When you use a technique that deals a type of damage from the following list, you can spend 1 cursed energy to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, or thunder.</description>
-		</sheet>
-	</element>
-	<element name="Twinned Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_MODIFICATION_TWINNED_TECHNIQUE">
-		<supports>TC Modification</supports>
-		<description>
-			<p>When you use a technique that targets only one creature and doesn’t have a range of self, you can spend a number of cursed energy equal to the technique’s cost to target a second creature in range with the same technique (1 cursed energy if the technique is free). To be eligible, a technique must be incapable of targeting more than one creature at the technique’s current level.</p>
-		</description>
-		<sheet>
-			<description>When you use a technique that targets only one creature and doesn’t have a range of self, you can spend a number of cursed energy equal to the technique’s cost to target a second creature in range with the same technique (1 cursed energy if the technique is free).</description>
+		<sheet usage="Action">
+			<description level="2">Up to {{ce:modifier}} in cursed energy, you make a dome starting from yourself with a 5-foot radius and a 10-foot height. For each cursed energy spent, the barrier can increase its width by 10 feet and its height by 10 feet. This barrier has 10 hit points per cursed energy spent and is immune to Poison and Psychic damage. This barrier lasts {{ce:modifier}} minutes.</description>
+			<description level="9">Up to {{ce:modifier}} in cursed energy, you make a dome starting from yourself with a 5-foot radius and a 10-foot height. For each cursed energy spent, the barrier can increase its width by 10 feet and its height by 10 feet. This barrier has 20 hit points per cursed energy spent and is immune to Poison and Psychic damage. This barrier lasts {{ce:modifier}} minutes.</description>
+			<description level="15">Up to {{ce:modifier}} in cursed energy, you make a dome starting from yourself with a 5-foot radius and a 10-foot height. For each cursed energy spent, the barrier can increase its width by 10 feet and its height by 10 feet. This barrier has 20 hit points per cursed energy spent and is immune to Poison and Psychic damage and is resistant to damage from the outside. This barrier lasts {{ce:modifier}} minutes.</description>
 		</sheet>
 	</element>
 	<element name="Ability Score Improvement" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_ABILITYSCOREIMPROVEMENT_SUPPORT_SPECIALIST">
