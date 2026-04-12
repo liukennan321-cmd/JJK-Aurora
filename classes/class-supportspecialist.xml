@@ -88,7 +88,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
-			<select type="Proficiency" name="Skill Proficiency (Strategist)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
+			<select type="Proficiency" name="Skill Proficiency (Support Specialist)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INVESTIGATION|ID_PROFICIENCY_SKILL_MEDICINE|ID_PROFICIENCY_SKILL_RELIGION" number="2" requirements="!ID_JJK_MULTICLASS_SUPPORT_SPECIALIST" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURSED_ENERGY" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_INNATE_TECHNIQUE" level="1" />
 			<grant type="Class Feature" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_CURTAIN" level="1" />
@@ -125,7 +125,7 @@
 			<description>You have {{ce:points}} Cursed Energy and your Cursed Energy DC is {{ce:dc}}. Your curse stat is {{cu:stat}}</description>
 		</sheet>
 		<rules>
-			<stat name="ce:points" value="level:strategist" />
+			<stat name="ce:points" value="level:support specialist" />
 			<stat name="ce:modifier" value="charisma:modifier" bonus="cursed energy" />
 			<stat name="ce:modifier" value="wisdom:modifier" bonus="cursed energy" />
 			<stat name="ce:points" value="ce:modifier" />
@@ -225,23 +225,23 @@
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_ABILITYSCOREIMPROVEMENT_SUPPORT_SPECIALIST</requirements>
 		<compendium display="false" />
 		<description>
-			<p>When you reach 4th level, and again at 6th, 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+			<p>When you reach 4th level, and again at 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (Strategist 4)" supports="Improvement Option,Strategist,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (Strategist 6)" supports="Improvement Option,Strategist,6" level="6" />
-			<select type="Class Feature" name="Improvement Option (Strategist 8)" supports="Improvement Option,Strategist,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (Strategist 10)" supports="Improvement Option,Strategist,10" level="10" />
-			<select type="Class Feature" name="Improvement Option (Strategist 12)" supports="Improvement Option,Strategist,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (Strategist 16)" supports="Improvement Option,Strategist,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (Strategist 19)" supports="Improvement Option,Strategist,19" level="19" />
+			<select type="Class Feature" name="Improvement Option (Support Specialist 4)" supports="Improvement Option,Support Specialist,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Support Specialist 8)" supports="Improvement Option,Support Specialist,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Support Specialist 12)" supports="Improvement Option,Support Specialist,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Support Specialist 14)" supports="Improvement Option,Support Specialist,14" level="14" />
+			<select type="Class Feature" name="Improvement Option (Support Specialist 16)" supports="Improvement Option,Support Specialist,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Support Specialist 19)" supports="Improvement Option,Support Specialist,19" level="19" />
 		</rules>
 	</element>
-	<element name="Sorcerous Restoration" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE">
+	<element name="Reverse Curse Technique" type="Class Feature" source="JJK" id="ID_JJK_CLASS_FEATURE_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE">
 		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_SUPPORT_SPECIALIST_REVERSE_CURSE_TECHNIQUE</requirements>
 		<description>
-			<p>At 15th level, you regain 4 cursed energy on a short rest.</p>
+			<p>Starting at 5th level, you have been born with a great aptitude for healing others, despite never really studying medicine. You will gain the Reverse Cursed Technique feature. Your reverse cursed technique is stronger than normal, letting you use 20 hit points from your RCT pool per cursed energy spent instead of 10.</p>
+			<p class="indent">In addition, you gain proficiency in the Medicine skill. If you are already proficient, you gain expertise instead. If you already have expertise you gain advantage. Whenever you make a medicine check to stabilize someone and succeed, the creature regains 1 hit point.</p>
 		</description>
 		<sheet>
 			<description>You regain 4 cursed energy on a short rest.</description>
